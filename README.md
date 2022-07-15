@@ -28,7 +28,7 @@ git checkout branchname :- switch to given branchName
 git add . :- add the files  
 git commit -m "Add the comments" :- commit the code with appropriate comments.  
 git push -u origin branchname :- replace branch name with the actual branch name.  
-- Check that staus before merginging into main, if required use pull request and than merge.
+- Check that staus before merging into main, if required use pull request and than merge.
 
 
 ## Technology/Tools Overview
