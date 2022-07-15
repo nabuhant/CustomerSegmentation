@@ -15,4 +15,6 @@ management.
 # Problem Question:
 Carry out a Customer Personality Analysis to create well defined customer segments (age, family/single/education) that help retail grocery businesses to understand different buying customer trends and behaviours
 
+https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing
+
 
