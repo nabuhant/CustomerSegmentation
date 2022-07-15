@@ -18,6 +18,7 @@ Carry out a Customer Personality Analysis to create well defined customer segmen
 ## Hypothesis & Expected Results
 Proposed findings and a hypothesis of results (i.e. business problem contextualized with data driven results)  
 
+
 ## Github repo and everyone has merged with the main branch at least once  
 1. To clone the new repo  
 - git clone url -> Replace url with the project url  
@@ -28,7 +29,7 @@ Proposed findings and a hypothesis of results (i.e. business problem contextuali
 - git add .   -> Add all the files  
 - git commit -m "Add the comments" -> Commit the code with appropriate comments.  
 - git push -u origin branchname -> Replace branch name with the actual branch name.  
-- Check the status before merging into main, if required use pull request and then merge.
+- Check the status before merging into main, if required use pull request and then merge.<br>
 
 
 ## Technology/Tools Overview
