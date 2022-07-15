@@ -30,6 +30,7 @@ git commit -m "Add the comments" :- commit the code with appropriate comments.
 git push -u origin branchname :- replace branch name with the actual branch name.  
 
 ## Technology/Tools Overview
+<br> https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing  
 
 ### Data Cleaning and Analysis
 The Pandas library in Jupyter notebook was used to clean data and perform exploratory analysis. Further analysis will be completed using Python.
@@ -48,9 +49,5 @@ Our training and testing will be split up into a 70:30 ratio.
 Tableau
 
 #### Diagram of Data Pipeline (ETL, Database, and Machine Learning model)  
-
-
-
-https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing
 
 
