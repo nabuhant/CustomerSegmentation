@@ -44,6 +44,7 @@ PostgreSQL with AWS cloud is used for the database requirement.
 SciKitLearn is the ML library we'll be using to create a classifier. We will use agglomerative clustering of unsupervised machine learning which are "K-means clustering" and "hierarchical clustering" algorithm in this project.
 Our training and testing will be split up into a 70:30 ratio. 
 #### ML Mockup
+![MLMockUp](/MLMockUp.PNG)  
 
 
 ### Dashboard
