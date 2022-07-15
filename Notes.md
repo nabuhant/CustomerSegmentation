@@ -5,9 +5,9 @@
 **Before meeting with your instructor, your team will need to complete the following:**  
 1. Decide on a topic, source data, and perform exploratory data analysis.  
    * Think of a question that can be answered using data.  
-2. Create a repository and establish individual branches for each team member.
+2. Create a repository and establish individual branches for each team member.DONE
 3. Create a mockup of a machine learning model.
-4. Create a mockup of a database.
+4. Create a mockup of a database.HINA
    * Source a dataset that will suit your needs (you can even use multiple datasets if applicable).
    * Begin to clean, organize, and perform exploratory data analysis on your datasets so that they're ready for analysis.
 5. Decide which technologies will be used.
