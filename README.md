@@ -30,6 +30,7 @@ git commit -m "Add the comments" :- commit the code with appropriate comments.
 git push -u origin branchname :- replace branch name with the actual branch name.  
 
 ## Technology/Tools Overview
+![DataPipeline](/Pipeline.PNG)  
 <br> https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing  
 
 ### Data Cleaning and Analysis
