@@ -59,12 +59,17 @@ The Pandas library in Jupyter notebook is used to clean the data and perform exp
 
 ### Database Storage
 PostgreSQL with AWS cloud is used for the database requirement.
+Data tables have been created to organize data and its functionality.
+Customer segmentation ERD has been created to further elaborate the data and its attributes.
+Project architecture has been implemented using google collab (ConnectDB File) . Spark session has been integrated  with machine learning provisional database.
 
-- Write the SQL or Schema for each table structure for each cleaned dataframes.
-- Create entries for each table. 
-- Export each table as csv and also place it in github for further need.<br>
-#### Database Mock Up (Preferably a ERD - Entity Relationship Diagram)  
-<br>
+#### Database Mock Up (Preferably a ERD - Entity Relationship Diagram) 
+![Customer segmentation ERD](https://user-images.githubusercontent.com/96637236/179373640-56fca98c-a7c3-44d7-b189-596236bc2d3e.png)
+
+Data Integration via AWS and Google collab-Jupyter notebook
+
+![Connect DB ](https://user-images.githubusercontent.com/96637236/179373879-83e3a074-f349-4859-b4a5-ad1e0071eb2e.png)
+
 
 ### Machine Learning
 SciKitLearn is the ML library that will be used to create a classifier. We will use agglomerative clustering of unsupervised machine learning which are "K-means clustering" and "hierarchical clustering" in this project.
