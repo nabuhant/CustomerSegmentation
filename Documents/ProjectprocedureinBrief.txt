@@ -1,0 +1,31 @@
+Steps:
+
+1)Python and its libraries will be used to clean, prepare, and explore the data: 
+1.Load the csv in a dataframe.
+2.Check for duplicates.
+3.Check for NAN values.
+4.Eliminate Redundant data.
+5.Convert any column data type according to the need of the end result.
+6.Divide the dataframe into further different dataframe as per the requirement, these dataframe will represent as individual table in the database.
+7.Any changes made or files added will be placed in the github final project folder.
+
+2)Cleaned data stored in S3 AWS technology platform as storage repo using Postgresql:
+1.Write the SQL or Schema for each table structure for each potential dataframes.
+2.Create entries for each table. 
+3.Export each table as csv and place it in github for further need.
+
+3)Machine learning implementation procedure:
+1.Retrieve the data from the storage using the SQL functions.
+2.Join or merge the database if required and store it in a different dataframe.
+3.Prepare the data for machine learning. Since we will use both the K-Means algorithm and Hierarchical clustering, each step below will be repeated for both the type of models with minimal or any changes required.
+a)Prepare the model.
+b)Prepare the training data .
+c)Fit the model.
+d)Measure the accuracy.
+e)Plot the graph.
+f)Final observation and analysis.
+
+4) Visualization of results in Tableau.
+
+5)Future enhancement
+UI to be implemented with the user chosen data.
