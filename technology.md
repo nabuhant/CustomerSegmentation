@@ -11,3 +11,7 @@ Our training and testing will be split up into a 70:30 ratio.
 
 ## Dashboard
 Tableau tool will be used for the visualization for the final results. 
+
+## Tools for Diagram used
+1)Draw io for data pipeline
+2)Visual Paradigm for ERD
