@@ -4,19 +4,26 @@
 Customer Segmentation 
 
 ## Why Customer Segmentation
-Customer segmentation is a vital source of a company's overall business success. Majority businesses are customer centric and would
+Customer segmentation is a vital source of a company's overall business success. Majority businesses are customer centric. They would
 like to succeed by reaching their target audience and marketing the right product to the targeted age group. Customer segmentation
 data analysis will give us the opportunity to experience the marketing strategies and enhance the understanding of product launch 
 management.
 
 ## Description of the source data
-People, product, promotion, place
+The source data was obtained from Kaggle where it was originally provided by Dr. Omar Romero-Hernandez, an economics researcher at UC Berkeley. The data describes the customers' attributes (i.e. age, education, marital status, number of kids), amount spent on products the business carries, history of customer orders/purchases, and customers' interactions with customer service (complaints and response).  
 
 ## Problem Question
-Carry out a Customer Personality Analysis to create well defined customer segments (age, family/single/education) that help retail grocery businesses to understand different buying customer trends and behaviours
+Carry out a customer personality analysis to create well defined customer segments that help retail grocery businesses to understand different buying customer trends and behaviours.
 
 ## Hypothesis & Expected Results
+Areas of interest include examing the relationship between:
+- family size and purchasing habits  
+- education, income and healthier food choices  
+- 
 Proposed findings and a hypothesis of results (i.e. business problem contextualized with data driven results)  
+Analysis Ideas/Data Analysis Notes:
+How the growth of the size of the family increases their buying habits.
+Education and healthier products
 
 
 ## Github repo and everyone has merged with the main branch at least once  
@@ -73,7 +80,7 @@ Our training and testing will be split up into a 70:30 ratio.
 - Plot the graph.
 - Final observation and analysis. <br>
 #### ML Mockup
-<br> ![MLMockUp](/MLMockUp.PNG)  <br>
+<br> ![MLMockUp](/MLMockUp.PNG)<br>
 
 
 ### Dashboard
