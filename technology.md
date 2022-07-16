@@ -6,12 +6,11 @@ The Pandas library in Jupyter notebook is used to clean data and perform explora
  PostgreSQL with AWS cloud is used for the database requirement.
 
 ## Machine Learning
-SciKitLearn is the ML library will be used to create a classifier. We will use agglomerative clustering of unsupervised machine learning which are "K-means clustering" and "hierarchical clustering" algorithm in this project.
-Our training and testing will be split up into a 70:30 ratio. 
+SciKitLearn is the ML library will be used to create a classifier. We will use machine learning which are "K-means clustering" and "hierarchical clustering" algorithm in this project.
 
 ## Dashboard
 Tableau tool will be used for the visualization for the final results. 
 
 ## Tools for Diagram used
-1)Draw io for data pipeline
-2)Visual Paradigm for ERD
+- Draw io for data pipeline
+- Visual Paradigm for ERD
