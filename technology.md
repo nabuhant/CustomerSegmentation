@@ -13,5 +13,5 @@ SciKitLearn is the ML library will be used to create a classifier. We will use u
 Tableau tool will be used for the visualization for the final results. 
 
 ## Tools for Diagram used
-1)Draw io for data pipeline 
-2)Visual Paradigm for ERD
+- Draw io for data pipeline
+- Visual Paradigm for ERD
