@@ -52,6 +52,10 @@ The Pandas library in Jupyter notebook is used to clean the data and perform exp
 
 ### Database Storage
 PostgreSQL with AWS cloud is used for the database requirement.
+Data tables have been added to clean the data in an organized manner.
+Customer segmentation ERD has been created to further elaborate the data and its attributes.
+Project architecture has been implemented using google collab using spark to integrate database with machine learning model.
+"C:\Users\hinas\OneDrive\Desktop\Bootcamp\Module_20_Group_Project\FinalProject\Images\Customer segmentation ERD.png"
 
 - Write the SQL or Schema for each table structure for each cleaned dataframes.
 - Create entries for each table. 
