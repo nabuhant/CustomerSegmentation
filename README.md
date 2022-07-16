@@ -16,7 +16,14 @@ The source data was obtained from Kaggle where it was originally provided by Dr.
 Carry out a customer personality analysis to create well defined customer segments that help retail grocery businesses to understand different buying customer trends and behaviours.
 
 ## Hypothesis & Expected Results
+Areas of interest include examing the relationship between:
+- family size and purchasing habits  
+- education, income and healthier food choices  
+- 
 Proposed findings and a hypothesis of results (i.e. business problem contextualized with data driven results)  
+Analysis Ideas/Data Analysis Notes:
+How the growth of the size of the family increases their buying habits.
+Education and healthier products
 
 
 ## Github repo and everyone has merged with the main branch at least once  
