@@ -84,17 +84,16 @@ Unsupervised Machine Learning would be the best method to target the business pr
 2. Join or merge the database if required and store it in a different dataframe.
 3. Prepare the data for machine learning. 
 4. Perform the 2 cluster algorithms.
-   4a) K-means Clustering  
-       - Step 1: 
-       - Step 2:
-       - Step 3:
-       - Step 4:
-   4b) Hierarchical Clustering  
-       - Step 1: 
-       - Step 2:
-       - Step 3:
-       - Step 4:
-
+4a. K-means Clustering  
+- Step 1: 
+- Step 2:
+- Step 3:
+- Step 4:
+4b. Hierarchical Clustering  
+- Step 1: 
+- Step 2:
+- Step 3:
+- Step 4:
 - Plot the graph if required.
 5. Output/outcome of machine learning language is stored in the database for visualization and analysis. <br>
 
