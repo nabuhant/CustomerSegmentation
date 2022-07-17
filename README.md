@@ -78,18 +78,25 @@ Data Integration via AWS and Google collab-Jupyter notebook
 <br> ![MLMockUp](/MLMockUp.PNG)<br>
 The link for the Google document for the ML mockup document can be found here [ML MockUp Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
 <br> 
-SciKitLearn is the ML library that will be used to create a classifier. We will use agglomerative clustering of unsupervised machine learning which are "K-means clustering" and "hierarchical clustering" in this project.
-Our training and testing will be split up into a 70:30 ratio. 
+Unsupervised Machine Learning would be the best method to target the business problem because it is very unlikely to determine groups/classification for types of data from the selected dataset. Therefore, unsupersvised learning will create clusters which furthemore allows to determine patterns to group data. SciKitLearn is the ML library that will be used with Jupyter Notebook to create clusters. As unsupervised learning relies on visual analysis, hvPlot and Plotly libraries are also added to the environment. Clusters will be determined by using K-means algorithm and hierarchical clustering in this project. Purpose to perform two different algorithms is to simply compare/evaluate it's results to further evaluate the probelm and offer an in-depth analysis. 
+
 1. Retrieve the data from the storage using the SQL functions.
 2. Join or merge the database if required and store it in a different dataframe.
-3. Prepare the data for machine learning. Since we will use both the K-Means algorithm and Hierarchical clustering, each step below will be repeated for both the type of models with minimal or any changes required.
+3. Prepare the data for machine learning. 
+4. Perform the 2 cluster algorithms.
+   4a) K-means Clustering  
+       - Step 1: 
+       - Step 2:
+       - Step 3:
+       - Step 4:
+   4b) Hierarchical Clustering  
+       - Step 1: 
+       - Step 2:
+       - Step 3:
+       - Step 4:
 
-- Steps 1.
-- Steps 2.
-- Steps 3.
-- Steps 4.
 - Plot the graph if required.
-- Output/outcome of machine learning language is stored in the database for visualization and analysis. <br>
+5. Output/outcome of machine learning language is stored in the database for visualization and analysis. <br>
 
 
 ### Dashboard
@@ -110,3 +117,4 @@ Education and healthier products
 
 ### Summary
 - Will be included shortly
+  
