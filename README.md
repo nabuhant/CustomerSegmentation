@@ -80,7 +80,7 @@ The link for the Google document for the ML mockup document can be found here:
 - [ML MockUp Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
 <br> 
 Unsupervised Machine Learning would be the best method to target the business problem because it is very unlikely to determine groups/classification for types of data from the selected dataset. Therefore, unsupersvised learning will create clusters which furthemore allows to determine patterns to group data. SciKitLearn is the ML library that will be used with Jupyter Notebook to create clusters. As unsupervised learning relies on visual analysis, hvPlot and Plotly libraries are also added to the environment. Clusters will be determined by using K-means algorithm and hierarchical clustering in this project. Purpose to perform two different algorithms is to simply compare/evaluate it's results to further evaluate the probelm and offer an in-depth analysis. 
-<br>
+<br />
 1. Retrieve the data from the storage using the SQL functions.
 2. Join or merge the database if required and store it in a different dataframe.
 3. Prepare the data for machine learning.
