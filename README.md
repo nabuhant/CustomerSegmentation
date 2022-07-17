@@ -85,7 +85,7 @@ Unsupervised Machine Learning would be the best method to target the business pr
 3. Prepare the data for machine learning.
 4. Reduce data dimensions using PCA. 
 5. Perform K-means Clustering Algorithm.  
-- Step 1: Create elbow curve graph
+   - Step 1: Create elbow curve graph
 - Step 2: Determine number of clusters
 - Step 3: Run K-Means model to predict clusters
 - Step 4: Create new dataframe with predicted clusters
