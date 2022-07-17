@@ -82,19 +82,21 @@ Unsupervised Machine Learning would be the best method to target the business pr
 
 1. Retrieve the data from the storage using the SQL functions.
 2. Join or merge the database if required and store it in a different dataframe.
-3. Prepare the data for machine learning. 
-4. Perform K-means Clustering Algorithm  
-- Step 1: 
-- Step 2:
-- Step 3:
-- Step 4:
-5. Perform Hierarchical Clustering Algorithm 
-- Step 1: 
-- Step 2:
-- Step 3:
-- Step 4:
-- Plot the graph if required.
-5. Output/outcome of machine learning language is stored in the database for visualization and analysis. <br>
+3. Prepare the data for machine learning.
+4. Reduce data dimensions using PCA. 
+5. Perform K-means Clustering Algorithm.  
+- Step 1: Create elbow curve graph
+- Step 2: Determine number of clusters
+- Step 3: Run K-Means model to predict clusters
+- Step 4: Create new dataframe with predicted clusters
+- Step 5: Create 3D scatter plot diagram
+6. Perform Hierarchical Clustering Algorithm. 
+- Step 1: Create dendrogram graph
+- Step 2: Determine number of clusters
+- Step 3: Run agglomerative clustering
+- Step 4: Add column to identify clusters
+- Step 5: Create 3D scatter plot diagram
+<br>
 
 
 ### Dashboard
