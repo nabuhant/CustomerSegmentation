@@ -107,7 +107,7 @@ Unsupervised Machine Learning would be the best method to target the business pr
 - Data is retrieved from the database and displayed.
 <br>
 
-### Result
+### Results
 #### Areas of interest & expected results will include relationships between:
 - family size and purchasing habits  
 - education, income and healthier food choices   
