@@ -21,17 +21,17 @@ Carry out a customer personality analysis to create well defined customer segmen
 ### Github 
 #### Steps followed for creating a new branch:
 1. To clone the new repo  
-- git clone url -> Replace url with the project url  <br>
+   - git clone url -> Replace url with the project url  <br>
 2. Creating a new Branch and pushing the code in the branch.  
-- git branch branchname  -> branchname is the branch to be created.
-- git branch -> To check the available branches. * indicates the branch we are currently in.  
-- git checkout branchname -> Switch to the preferred branchName.  
-- git add .   -> Add all the files  
-- git commit -m "Add the comments" -> Commit the code with appropriate comments.  
-- git push -u origin branchname -> Replace branch name with the actual branch name.  <br>
+   - git branch branchname  -> branchname is the branch to be created.
+   - git branch -> To check the available branches. * indicates the branch we are currently in.  
+   - git checkout branchname -> Switch to the preferred branchName.  
+   - git add .   -> Add all the files  
+   - git commit -m "Add the comments" -> Commit the code with appropriate comments.  
+   - git push -u origin branchname -> Replace branch name with the actual branch name.  <br>
 3. Check the status before merging into main, if required use pull request and then merge.Following command is required before merging to avoid conflict.
-- git status
-- git pull origin <br>
+   - git status
+   - git pull origin <br>
 
 #### Description of the communication protocols
 - As the team of four each one collaborated and contributed equally for the Project.
