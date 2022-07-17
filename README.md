@@ -91,12 +91,13 @@ Unsupervised Machine Learning would be the best method to target the business pr
      - Step 3: Run K-Means model to predict clusters
      - Step 4: Create new dataframe with predicted clusters
      - Step 5: Create 3D scatter plot diagram
-7. Perform Hierarchical Clustering Algorithm. 
-   - Step 1: Create dendrogram graph
-   - Step 2: Determine number of clusters
-   - Step 3: Run agglomerative clustering
-   - Step 4: Add column to identify clusters
-   - Step 5: Create 3D scatter plot diagram
+   - Perform Hierarchical Clustering Algorithm. 
+     - Step 1: Create dendrogram graph
+     - Step 2: Determine number of clusters
+     - Step 3: Run agglomerative clustering
+     - Step 4: Add column to identify clusters
+     - Step 5: Create 3D scatter plot diagram
+6. Compare model results.
 <br>
 
 
