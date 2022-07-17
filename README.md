@@ -112,12 +112,7 @@ Unsupervised Machine Learning would be the best method to target the business pr
 Areas of interest include examining the relationship between:
 - family size and purchasing habits  
 - education, income and healthier food choices  
- 
-- Proposed findings and a hypothesis of results (i.e. business problem contextualized with data driven results)  
-- Analysis Ideas/Data Analysis Notes:
+Proposed findings and a hypothesis of results (i.e. business problem contextualized with data driven results)  
+Analysis Ideas/Data Analysis Notes
 - How the growth of the size of the family increases their buying habits.
-Education and healthier products
-
-### Summary
-- Will be included shortly
-  
+- Education and healthier products
