@@ -21,17 +21,17 @@ Carry out a customer personality analysis to create well defined customer segmen
 ### Github 
 #### Steps followed for creating a new branch:
 1. To clone the new repo  
-- git clone url -> Replace url with the project url  <br>
+   - git clone url -> Replace url with the project url  <br>
 2. Creating a new Branch and pushing the code in the branch.  
-- git branch branchname  -> branchname is the branch to be created.
-- git branch -> To check the available branches. * indicates the branch we are currently in.  
-- git checkout branchname -> Switch to the preferred branchName.  
-- git add .   -> Add all the files  
-- git commit -m "Add the comments" -> Commit the code with appropriate comments.  
-- git push -u origin branchname -> Replace branch name with the actual branch name.  <br>
+   - git branch branchname  -> branchname is the branch to be created.
+   - git branch -> To check the available branches. * indicates the branch we are currently in.  
+   - git checkout branchname -> Switch to the preferred branchName.  
+   - git add .   -> Add all the files  
+   - git commit -m "Add the comments" -> Commit the code with appropriate comments.  
+   - git push -u origin branchname -> Replace branch name with the actual branch name.  <br>
 3. Check the status before merging into main, if required use pull request and then merge.Following command is required before merging to avoid conflict.
-- git status
-- git pull origin <br>
+   - git status
+   - git pull origin <br>
 
 #### Description of the communication protocols
 - As the team of four each one collaborated and contributed equally for the Project.
@@ -76,20 +76,32 @@ Data Integration via AWS and Google collab-Jupyter notebook
 ### Machine Learning
 #### ML Mockup
 <br> ![MLMockUp](/MLMockUp.PNG)<br>
-The link for the Google document for the ML mockup document can be found here [ML MockUp Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
+The link for the Google document for the ML mockup document can be found here:
+- [ML MockUp Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
 <br> 
-SciKitLearn is the ML library that will be used to create a classifier. We will use agglomerative clustering of unsupervised machine learning which are "K-means clustering" and "hierarchical clustering" in this project.
-Our training and testing will be split up into a 70:30 ratio. 
+Unsupervised Machine Learning would be the best method to target the business problem because it is very unlikely to determine groups/classification for types of data from the selected dataset. Therefore, unsupersvised learning will create clusters which furthemore allows to determine patterns to group data. SciKitLearn is the ML library that will be used with Jupyter Notebook to create clusters. As unsupervised learning relies on visual analysis, hvPlot and Plotly libraries are also added to the environment. Clusters will be determined by using K-means algorithm and hierarchical clustering in this project. Purpose to perform two different algorithms is to simply compare/evaluate it's results to further evaluate the probelm and offer an in-depth analysis. 
+<br>
+
+
 1. Retrieve the data from the storage using the SQL functions.
 2. Join or merge the database if required and store it in a different dataframe.
-3. Prepare the data for machine learning. Since we will use both the K-Means algorithm and Hierarchical clustering, each step below will be repeated for both the type of models with minimal or any changes required.
-
-- Steps 1.
-- Steps 2.
-- Steps 3.
-- Steps 4.
-- Plot the graph if required.
-- Output/outcome of machine learning language is stored in the database for visualization and analysis. <br>
+3. Prepare the data for machine learning.
+4. Reduce data dimensions using PCA.
+5. Perform clustering algorithms. 
+   - K-means Clustering   
+     - Step 1: Create elbow curve graph
+     - Step 2: Determine number of clusters
+     - Step 3: Run K-Means model to predict clusters
+     - Step 4: Create new dataframe with predicted clusters
+     - Step 5: Create 3D scatter plot diagram
+   - Perform Hierarchical Clustering Algorithm. 
+     - Step 1: Create dendrogram graph
+     - Step 2: Determine number of clusters
+     - Step 3: Run agglomerative clustering
+     - Step 4: Add column to identify clusters
+     - Step 5: Create 3D scatter plot diagram
+6. Compare model results.
+<br>
 
 
 ### Dashboard
@@ -97,16 +109,9 @@ Our training and testing will be split up into a 70:30 ratio.
 - Data is retrieved from the database and displayed.
 <br>
 
-### Result
-#### Hypothesis & Expected Results will include
-Areas of interest include examining the relationship between:
+### Results
+#### Areas of interest & expected results will include relationships between:
 - family size and purchasing habits  
-- education, income and healthier food choices  
- 
-- Proposed findings and a hypothesis of results (i.e. business problem contextualized with data driven results)  
-- Analysis Ideas/Data Analysis Notes:
+- education, income and healthier food choices   
 - How the growth of the size of the family increases their buying habits.
-Education and healthier products
-
-### Summary
-- Will be included shortly
+- Education and healthier products
