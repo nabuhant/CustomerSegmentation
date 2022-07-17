@@ -1,48 +1,50 @@
 # Customer Segmentation
 
-## Topic
-Customer Segmentation 
+## Project Description 
 
-## Why Customer Segmentation
+### Why Customer Segmentation
 Customer segmentation is a vital source of a company's overall business success. Majority businesses are customer centric. They would
 like to succeed by reaching their target audience and marketing the right product to the targeted age group. Customer segmentation
-data analysis will give us the opportunity to experience the marketing strategies and enhance the understanding of product launch 
+Data analysis will give us the opportunity to experience the marketing strategies and enhance the understanding of product launch 
 management.
 
-## Description of the source data
+### Description of the source data
 The source data was obtained from Kaggle where it was originally provided by Dr. Omar Romero-Hernandez, an economics researcher at UC Berkeley. The data describes the customers' attributes (i.e. age, education, marital status, number of kids), amount spent on products the business carries, history of customer orders/purchases, and customers' interactions with customer service (complaints and response).  
 
-## Problem Question
+### Problem Question
 Carry out a customer personality analysis to create well defined customer segments that help retail grocery businesses to understand different buying customer trends and behaviours.
 
-## Hypothesis & Expected Results
-Areas of interest include examing the relationship between:
-- family size and purchasing habits  
-- education, income and healthier food choices  
-- 
-Proposed findings and a hypothesis of results (i.e. business problem contextualized with data driven results)  
-Analysis Ideas/Data Analysis Notes:
-How the growth of the size of the family increases their buying habits.
-Education and healthier products
 
 
-## Github repo and everyone has merged with the main branch at least once  
+## Overview
+
+### Github 
+#### Steps followed for creating a new branch:
 1. To clone the new repo  
-- git clone url -> Replace url with the project url  
+- git clone url -> Replace url with the project url  <br>
 2. Creating a new Branch and pushing the code in the branch.  
 - git branch branchname  -> branchname is the branch to be created.
 - git branch -> To check the available branches. * indicates the branch we are currently in.  
 - git checkout branchname -> Switch to the preferred branchName.  
 - git add .   -> Add all the files  
 - git commit -m "Add the comments" -> Commit the code with appropriate comments.  
-- git push -u origin branchname -> Replace branch name with the actual branch name.  
-- Check the status before merging into main, if required use pull request and then merge.<br>
+- git push -u origin branchname -> Replace branch name with the actual branch name.  <br>
+3. Check the status before merging into main, if required use pull request and then merge.Following command is required before merging to avoid conflict.
+- git status
+- git pull origin <br>
 
+#### Description of the communication protocols
+- As the team of four each one collaborated and contributed equally for the Project.
+- Have used Google meet and Zoom calls apart from the office hours and class hours provided by the boot camp.
 
-## Technology/Tools Overview
+#### Individual Branches Creation
+- All the members have created a separate branch and to work upon and successfully merged into the main branch.
+ 
+
+### Technology/Tools Overview
 ![DataPipeline](/Pipeline.PNG) 
-
-<br> https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing  <br>
+- The link for the Google document for the DataPipeline document can be found here [Data Pipeline Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
+<br> 
 
 ### Data Cleaning and Analysis
 The Pandas library in Jupyter notebook is used to clean the data and perform exploratory analysis. 
@@ -61,7 +63,7 @@ The Pandas library in Jupyter notebook is used to clean the data and perform exp
 PostgreSQL with AWS cloud is used for the database requirement.
 Data tables have been created to organize data and its functionality.
 Customer segmentation ERD has been created to further elaborate the data and its attributes.
-Project architecture has been implemented using google collab (ConnectDB File) . Spark session has been integrated  with machine learning provisional database.
+Project architecture has been implemented using google collab (ConnectDB File). Spark session has been integrated with the machine learning provisional database.
 
 #### Database Mock Up (Preferably a ERD - Entity Relationship Diagram) 
 ![Customer segmentation ERD](https://user-images.githubusercontent.com/96637236/179373640-56fca98c-a7c3-44d7-b189-596236bc2d3e.png)
@@ -72,22 +74,39 @@ Data Integration via AWS and Google collab-Jupyter notebook
 
 
 ### Machine Learning
+#### ML Mockup
+<br> ![MLMockUp](/MLMockUp.PNG)<br>
+The link for the Google document for the ML mockup document can be found here [ML MockUp Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
+<br> 
 SciKitLearn is the ML library that will be used to create a classifier. We will use agglomerative clustering of unsupervised machine learning which are "K-means clustering" and "hierarchical clustering" in this project.
 Our training and testing will be split up into a 70:30 ratio. 
 1. Retrieve the data from the storage using the SQL functions.
 2. Join or merge the database if required and store it in a different dataframe.
 3. Prepare the data for machine learning. Since we will use both the K-Means algorithm and Hierarchical clustering, each step below will be repeated for both the type of models with minimal or any changes required.
 
-- Prepare the training data.
-- Prepare the model.
-- Fit the model.
-- Measure the accuracy.
-- Plot the graph.
-- Final observation and analysis. <br>
-#### ML Mockup
-<br> ![MLMockUp](/MLMockUp.PNG)<br>
+- Steps 1.
+- Steps 2.
+- Steps 3.
+- Steps 4.
+- Plot the graph if required.
+- Output/outcome of machine learning language is stored in the database for visualization and analysis. <br>
 
 
 ### Dashboard
-Tableau will be used for visualization of the results.
+- Tableau will be used for visualization of the results.
+- Data is retrieved from the database and displayed.
 <br>
+
+### Result
+#### Hypothesis & Expected Results will include
+Areas of interest include examining the relationship between:
+- family size and purchasing habits  
+- education, income and healthier food choices  
+ 
+- Proposed findings and a hypothesis of results (i.e. business problem contextualized with data driven results)  
+- Analysis Ideas/Data Analysis Notes:
+- How the growth of the size of the family increases their buying habits.
+Education and healthier products
+
+### Summary
+- Will be included shortly
