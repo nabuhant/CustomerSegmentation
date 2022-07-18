@@ -1,59 +1,63 @@
 # Customer Segmentation
 
-## Topic
-Customer Segmentation 
+## Project Description 
 
-## Why Customer Segmentation
+### Why Customer Segmentation
 Customer segmentation is a vital source of a company's overall business success. Majority businesses are customer centric. They would
 like to succeed by reaching their target audience and marketing the right product to the targeted age group. Customer segmentation
-data analysis will give us the opportunity to experience the marketing strategies and enhance the understanding of product launch 
+Data analysis will give us the opportunity to experience the marketing strategies and enhance the understanding of product launch 
 management.
 
-## Description of the source data
+### Description of the source data
 The source data was obtained from Kaggle where it was originally provided by Dr. Omar Romero-Hernandez, an economics researcher at UC Berkeley. The data describes the customers' attributes (i.e. age, education, marital status, number of kids), amount spent on products the business carries, history of customer orders/purchases, and customers' interactions with customer service (complaints and response).  
 
-## Problem Question
+### Problem Question
 Carry out a customer personality analysis to create well defined customer segments that help retail grocery businesses to understand different buying customer trends and behaviours.
 
-## Hypothesis & Expected Results
-Areas of interest include examing the relationship between:
-- family size and purchasing habits  
-- education, income and healthier food choices  
-- 
-Proposed findings and a hypothesis of results (i.e. business problem contextualized with data driven results)  
-Analysis Ideas/Data Analysis Notes:
-How the growth of the size of the family increases their buying habits.
-Education and healthier products
 
 
-## Github repo and everyone has merged with the main branch at least once  
+## Overview
+
+### Github 
+#### Steps followed for creating a new branch:
 1. To clone the new repo  
-- git clone url -> Replace url with the project url  
+   - git clone url -> Replace url with the project url  <br>
 2. Creating a new Branch and pushing the code in the branch.  
-- git branch branchname  -> branchname is the branch to be created.
-- git branch -> To check the available branches. * indicates the branch we are currently in.  
-- git checkout branchname -> Switch to the preferred branchName.  
-- git add .   -> Add all the files  
-- git commit -m "Add the comments" -> Commit the code with appropriate comments.  
-- git push -u origin branchname -> Replace branch name with the actual branch name.  
-- Check the status before merging into main, if required use pull request and then merge.<br>
+   - git branch branchname  -> branchname is the branch to be created.
+   - git branch -> To check the available branches. * indicates the branch we are currently in.  
+   - git checkout branchname -> Switch to the preferred branchName.  
+   - git add .   -> Add all the files  
+   - git commit -m "Add the comments" -> Commit the code with appropriate comments.  
+   - git push -u origin branchname -> Replace branch name with the actual branch name.  <br>
+3. Check the status before merging into main, if required use pull request and then merge.Following command is required before merging to avoid conflict.
+   - git status
+   - git pull origin <br>
 
+#### Description of the communication protocols
+- As a team of four, each member collaborated and contributed equally towards the project.
+- Have used Google meet and Zoom calls apart from the office hours and class hours provided by the boot camp.
+- Have used the team's Slack channel for communication outside if meetings
 
-## Technology/Tools Overview
+#### Individual Branches Creation
+- All the members have created a separate branch to work upon and have successfully merged into the main branch.
+ 
+
+### Technology/Tools Overview
 ![DataPipeline](/Pipeline.PNG) 
-
-<br> https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing  <br>
+- The link where the Data Pipeline diagram was created on draw.io can be found here [Data Pipeline Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
+<br> 
 
 ### Data Cleaning and Analysis
-The Pandas library in Jupyter notebook is used to clean the data and perform exploratory analysis. 
+The Pandas library is utilised through Jupyter notebook. It is used to clean the data and perform exploratory data analysis (EDA). 
+General outline of steps to be followed: 
 - Load the csv in a dataframe.
 - Check for duplicates.
 - Check for NAN values.
-- Eliminate Redundant data.
+- Eliminate redundant data.
 - Convert any column data type according to the need of the end result.
-- Divide the data frame into further different dataframe as per the requirement, these data frames  will represent as individual tables in the database.
+- Divide the data frame into further different dataframes as per the requirement; these data frames  will represent individual tables in the database.
 - Data is ready for initial storage.
-- Any changes made or files added will be placed in the github final project folder.
+- Any changes made or files added will be placed in this GitHub repository.
 <br>
 
 
@@ -61,33 +65,54 @@ The Pandas library in Jupyter notebook is used to clean the data and perform exp
 PostgreSQL with AWS cloud is used for the database requirement.
 Data tables have been created to organize data and its functionality.
 Customer segmentation ERD has been created to further elaborate the data and its attributes.
-Project architecture has been implemented using google collab (ConnectDB File) . Spark session has been integrated  with machine learning provisional database.
+Project architecture has been implemented using Google Colab (ConnectDB File). Spark session has been integrated with the machine learning provisional database.
 
-#### Database Mock Up (Preferably a ERD - Entity Relationship Diagram) 
+#### Database Mock Up
 ![Customer segmentation ERD](https://user-images.githubusercontent.com/96637236/179373640-56fca98c-a7c3-44d7-b189-596236bc2d3e.png)
 
-Data Integration via AWS and Google collab-Jupyter notebook
+Data Integration via AWS and Google Colab-Jupyter notebook
 
 ![Connect DB ](https://user-images.githubusercontent.com/96637236/179373879-83e3a074-f349-4859-b4a5-ad1e0071eb2e.png)
 
 
 ### Machine Learning
-SciKitLearn is the ML library that will be used to create a classifier. We will use agglomerative clustering of unsupervised machine learning which are "K-means clustering" and "hierarchical clustering" in this project.
-Our training and testing will be split up into a 70:30 ratio. 
-1. Retrieve the data from the storage using the SQL functions.
-2. Join or merge the database if required and store it in a different dataframe.
-3. Prepare the data for machine learning. Since we will use both the K-Means algorithm and Hierarchical clustering, each step below will be repeated for both the type of models with minimal or any changes required.
-
-- Prepare the training data.
-- Prepare the model.
-- Fit the model.
-- Measure the accuracy.
-- Plot the graph.
-- Final observation and analysis. <br>
 #### ML Mockup
 <br> ![MLMockUp](/MLMockUp.PNG)<br>
+The link for the Google document for the ML mockup document can be found here:
+[ML MockUp Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
+<br> 
+Unsupervised Machine Learning would be the best method to target the business problem because it is very unlikely to determine groups/classification for types of data from the selected dataset. Therefore, unsupersvised learning will create clusters which furthemore allows to determine patterns to group data. SciKitLearn is the ML library that will be used with Jupyter Notebook to create clusters. As unsupervised learning relies on visual analysis, hvPlot and Plotly libraries are also added to the environment. Clusters will be determined by using K-means algorithm and hierarchical clustering in this project. Purpose to perform two different algorithms is to simply compare/evaluate its results to further evaluate the probelm and offer an in-depth analysis. 
+<br>
+
+
+1. Retrieve the data from the storage using the SQL functions.
+2. Join or merge the database if required and store it in a different dataframe.
+3. Prepare the data for machine learning.
+4. Reduce data dimensions using PCA.
+5. Perform clustering algorithms. 
+   - K-means Clustering   
+     - Step 1: Create elbow curve graph
+     - Step 2: Determine number of clusters
+     - Step 3: Run K-Means model to predict clusters
+     - Step 4: Create new dataframe with predicted clusters
+     - Step 5: Create 3D scatter plot diagram
+   - Perform Hierarchical Clustering Algorithm. 
+     - Step 1: Create dendrogram graph
+     - Step 2: Determine number of clusters
+     - Step 3: Run agglomerative clustering
+     - Step 4: Add column to identify clusters
+     - Step 5: Create 3D scatter plot diagram
+6. Compare model results.
+<br>
 
 
 ### Dashboard
-Tableau will be used for visualization of the results.
+- Tableau will be used for visualization of the results.
+- Data is retrieved from the database and displayed.
 <br>
+
+### Results
+#### Areas of interest & expected results will include examining relationships between:
+- family size and purchasing habits  
+- education, income and healthier food choices   
+- How the growth of the size of the family increases their buying habits.
