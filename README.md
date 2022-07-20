@@ -34,28 +34,30 @@ Carry out a customer personality analysis to create well defined customer segmen
    - git pull origin <br>
 
 #### Description of the communication protocols
-- As the team of four each one collaborated and contributed equally for the Project.
+- As a team of four, each member collaborated and contributed equally towards the project.
 - Have used Google meet and Zoom calls apart from the office hours and class hours provided by the boot camp.
+- Have used the team's Slack channel for communication outside if meetings
 
 #### Individual Branches Creation
-- All the members have created a separate branch and to work upon and successfully merged into the main branch.
+- All the members have created a separate branch to work upon and have successfully merged into the main branch.
  
 
 ### Technology/Tools Overview
 ![DataPipeline](/Pipeline.PNG) 
-- The link for the Google document for the DataPipeline document can be found here [Data Pipeline Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
+- The link where the Data Pipeline diagram was created on draw.io can be found here [Data Pipeline Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
 <br> 
 
 ### Data Cleaning and Analysis
-The Pandas library in Jupyter notebook is used to clean the data and perform exploratory analysis. 
+The Pandas library is utilised through Jupyter notebook. It is used to clean the data and perform exploratory data analysis (EDA). 
+General outline of steps to be followed: 
 - Load the csv in a dataframe.
 - Check for duplicates.
 - Check for NAN values.
-- Eliminate Redundant data.
+- Eliminate redundant data.
 - Convert any column data type according to the need of the end result.
-- Divide the data frame into further different dataframe as per the requirement, these data frames  will represent as individual tables in the database.
+- Divide the data frame into further different dataframes as per the requirement; these data frames  will represent individual tables in the database.
 - Data is ready for initial storage.
-- Any changes made or files added will be placed in the github final project folder.
+- Any changes made or files added will be placed in this GitHub repository.
 <br>
 
 
@@ -63,12 +65,12 @@ The Pandas library in Jupyter notebook is used to clean the data and perform exp
 PostgreSQL with AWS cloud is used for the database requirement.
 Data tables have been created to organize data and its functionality.
 Customer segmentation ERD has been created to further elaborate the data and its attributes.
-Project architecture has been implemented using google collab (ConnectDB File). Spark session has been integrated with the machine learning provisional database.
+Project architecture has been implemented using Google Colab (ConnectDB File). Spark session has been integrated with the machine learning provisional database.
 
-#### Database Mock Up (Preferably a ERD - Entity Relationship Diagram) 
+#### Database Mock Up
 ![Customer segmentation ERD](https://user-images.githubusercontent.com/96637236/179373640-56fca98c-a7c3-44d7-b189-596236bc2d3e.png)
 
-Data Integration via AWS and Google collab-Jupyter notebook
+Data Integration via AWS and Google Colab-Jupyter notebook
 
 ![Connect DB ](https://user-images.githubusercontent.com/96637236/179373879-83e3a074-f349-4859-b4a5-ad1e0071eb2e.png)
 
@@ -77,9 +79,13 @@ Data Integration via AWS and Google collab-Jupyter notebook
 #### ML Mockup
 <br> ![MLMockUp](/MLMockUp.PNG)<br>
 The link for the Google document for the ML mockup document can be found here:
+<<<<<<< HEAD
  [ML MockUp Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
+=======
+[ML MockUp Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
+>>>>>>> 4060c0bc3615cd8384dff73f5bd4560dde6eb0ac
 <br> 
-Unsupervised Machine Learning would be the best method to target the business problem because it is very unlikely to determine groups/classification for types of data from the selected dataset. Therefore, unsupersvised learning will create clusters which furthemore allows to determine patterns to group data. SciKitLearn is the ML library that will be used with Jupyter Notebook to create clusters. As unsupervised learning relies on visual analysis, hvPlot and Plotly libraries are also added to the environment. Clusters will be determined by using K-means algorithm and hierarchical clustering in this project. Purpose to perform two different algorithms is to simply compare/evaluate it's results to further evaluate the probelm and offer an in-depth analysis. 
+Unsupervised Machine Learning would be the best method to target the business problem because it is very unlikely to determine groups/classification for types of data from the selected dataset. Therefore, unsupersvised learning will create clusters which furthemore allows to determine patterns to group data. SciKitLearn is the ML library that will be used with Jupyter Notebook to create clusters. As unsupervised learning relies on visual analysis, hvPlot and Plotly libraries are also added to the environment. Clusters will be determined by using K-means algorithm and hierarchical clustering in this project. Purpose to perform two different algorithms is to simply compare/evaluate its results to further evaluate the probelm and offer an in-depth analysis. 
 <br>
 
 
@@ -110,8 +116,7 @@ Unsupervised Machine Learning would be the best method to target the business pr
 <br>
 
 ### Results
-#### Areas of interest & expected results will include relationships between:
+#### Areas of interest & expected results will include examining relationships between:
 - family size and purchasing habits  
 - education, income and healthier food choices   
 - How the growth of the size of the family increases their buying habits.
-- Education and healthier products
