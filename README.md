@@ -43,7 +43,7 @@ Carry out a customer personality analysis to create well defined customer segmen
  
 
 ### Technology/Tools Overview
-![DataPipeline](/Pipeline.PNG) 
+![DataPipeline](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/Pipeline.PNG)
 - The link where the Data Pipeline diagram was created on draw.io can be found here [Data Pipeline Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
 <br> 
 
@@ -77,7 +77,7 @@ Data Integration via AWS and Google Colab-Jupyter notebook
 
 ### Machine Learning
 #### ML Mockup
-<br> ![MLMockUp](/MLMockUp.PNG)<br>
+<br> ![MLMockUp](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/MLMockUp.PNG)<br>
 The link for the Google document for the ML mockup document can be found here:
  [ML MockUp Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
 <br> 
@@ -88,8 +88,7 @@ Unsupervised Machine Learning would be the best method to target the business pr
 1. Retrieve the data from the storage using the SQL functions.
 2. Join or merge the database if required and store it in a different dataframe.
 3. Prepare the data for machine learning.
-4. Reduce data dimensions using PCA.
-5. Perform clustering algorithms. 
+4. Perform clustering algorithms. 
    - K-means Clustering   
      - Step 1: Create elbow curve graph
      - Step 2: Determine number of clusters
