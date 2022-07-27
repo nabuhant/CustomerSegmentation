@@ -47,7 +47,7 @@ Carry out a customer personality analysis to create well defined customer segmen
 - The link where the Data Pipeline diagram was created on draw.io can be found here [Data Pipeline Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
 <br> 
 
-### Data Cleaning and Analysis
+### Data Cleaning and Connection
 The Pandas library is utilised through Jupyter notebook. It is used to clean the data and perform exploratory data analysis (EDA). 
 General outline of steps to be followed: 
 - Load the csv in a dataframe.
