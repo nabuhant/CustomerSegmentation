@@ -87,15 +87,15 @@ Unsupervised Machine Learning would be the best method to target the business pr
 Clusters will be determined by using K-means and  Agglomerative  clustering algorithms in this project. The purpose of performing two different algorithms is to simply compare/evaluate its results to further evaluate the problem and offer an in-depth analysis.
 <br>
 #### Brief Procedure: <br>
-1. Make a copy of the dataframe obtained from the EDA process.
+1. Made a copy of the dataframe obtained from the EDA process.
 2. The dataframe had categorical columns which were 'Marital_Status_map','Age_Group','Education_map' hence applied a "One-hot-encoder" algorithm on  these columns.<br>
 ![ML_DF1](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/ML1.PNG)<br>
 3. The dataframe obtained is merged with the original dataframe, renamed it with meaningful column names.
-4. Drop the unnecessary columns along with the ones that were encoded and the 'NAN' containing rows. Dataframe is ready to be used for clustering algorithms.<br>
+4. Dropped the unnecessary columns along with the ones that were encoded and the 'NAN' containing rows. Dataframe is ready to be used for clustering algorithms.<br>
 <br> ![ML_DF2](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/ML2.PNG)<br> <br>
 5. Perform clustering algorithms:
    1) First the dataframe is subjected to the K-Means algorithm to find the clusters.
-         - Found the value of "K =3 " using the Elbow Curve.<br>
+         - Found the value of "K =3 " using the Elbow Curve.<br> <br>
          ![Elbow Graph](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/elbowGraph.PNG) <br>
          - The K value of 3 clusters and the dataframe is passed to the "get_clusters" function that uses KMeans model and returns the predictions(0,1,2) in the form  of a column called "class" of the dataframe. <br>
          ![Three Cluster Data Frame](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/ThreeClusterDataFrame.PNG)<br>
