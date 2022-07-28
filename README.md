@@ -81,28 +81,41 @@ Data Integration via AWS and Google Colab-Jupyter notebook
 The link for the Google document for the ML mockup document can be found here:
  [ML MockUp Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
 <br> 
-Unsupervised Machine Learning would be the best method to target the business problem because it is very unlikely to determine groups/classification for types of data from the selected dataset. Therefore, unsupersvised learning will create clusters which furthemore allows to determine patterns to group data. SciKitLearn is the ML library that will be used with Jupyter Notebook to create clusters. As unsupervised learning relies on visual analysis, hvPlot and Plotly libraries are also added to the environment. Clusters will be determined by using K-means algorithm and hierarchical clustering in this project. Purpose to perform two different algorithms is to simply compare/evaluate its results to further evaluate the probelm and offer an in-depth analysis. 
+Unsupervised Machine Learning would be the best method to target the business problem because it is very unlikely to determine groups/classification for types of data from the selected dataset. Therefore, unsupervised learning will create clusters which furthermore allows to determine patterns to group data. SciKitLearn is the ML library that will be used with Jupyter Notebook to create clusters. As unsupervised learning relies on visual analysis, hvPlot and Plotly libraries are also added to the environment.<br>
+![cluster Types](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/clusterTypes.PNG)
 <br>
-
-
-1. Retrieve the data from the storage using the SQL functions.
-2. Join or merge the database if required and store it in a different dataframe.
-3. Prepare the data for machine learning.
-4. Perform clustering algorithms. 
-   - K-means Clustering   
-     - Step 1: Create elbow curve graph
-     - Step 2: Determine number of clusters
-     - Step 3: Run K-Means model to predict clusters
-     - Step 4: Create new dataframe with predicted clusters
-     - Step 5: Create 3D scatter plot diagram
-   - Perform Hierarchical Clustering Algorithm. 
-     - Step 1: Create dendrogram graph
-     - Step 2: Determine number of clusters
-     - Step 3: Run agglomerative clustering
-     - Step 4: Add column to identify clusters
-     - Step 5: Create 3D scatter plot diagram
-6. Compare model results.
+Clusters will be determined by using K-means and  Agglomerative  clustering algorithms in this project. The purpose of performing two different algorithms is to simply compare/evaluate its results to further evaluate the problem and offer an in-depth analysis.
 <br>
+#### Brief Procedure: <br>
+1. Make a copy of the dataframe obtained from the EDA process.
+2. The dataframe had categorical columns which were 'Marital_Status_map','Age_Group','Education_map' hence applied a "One-hot-encoder" algorithm on  these columns.<br>
+![ML_DF1](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/ML1.PNG)<br>
+3. The dataframe obtained is merged with the original dataframe, renamed it with meaningful column names.
+4. Drop the unnecessary columns along with the ones that were encoded and the 'NAN' containing rows. Dataframe is ready to be used for clustering algorithms.<br>
+<br> ![ML_DF2](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/ML2.PNG)<br> <br>
+5. Perform clustering algorithms:
+   1) First the dataframe is subjected to the K-Means algorithm to find the clusters.
+         - Found the value of "K =3 " using the Elbow Curve.<br>
+         ![Elbow Graph](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/elbowGraph.PNG) <br>
+         - The K value of 3 clusters and the dataframe is passed to the "get_clusters" function that uses KMeans model and returns the predictions(0,1,2) in the form  of a column called "class" of the dataframe. <br>
+         ![Three Cluster Data Frame](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/ThreeClusterDataFrame.PNG)<br>
+         - Using the logistic regression analysis performed in EDA, dimensions "Income" and "Total_Spent" were selected and plotted a 2D hvplot-scatter graph for further analysis.<br>
+   ![k-means1](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/k-means1.PNG)<br>
+         - Tried the same process by plotting different combinations of dimensions "Income " and "TotalNumPurchases" just for the reference.<br>
+   ![k-means2](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/k-means2.PNG)<br>
+         - This dataframe is then exported as csv and also stored in the Amazon RDS database.
+         
+    2) Secondly the same data frame obtained by encoding and cleaned from step 4 is subjected to the "Agglomerative Clustering" algorithm.
+         - Using Dendrogram 2 clusters were calculated.<br>
+   ![Dendrograph](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/Dendrograph.PNG)<br>
+         - A copy of the dataframe is made to work upon  and applied the "Agglomerative Clustering" algorithm on it. Identified the class and added it as one of the columns.   
+         - Created a 2D hvplot-scatter plot to show the results of the hierarchical clustering algorithm against the dimensions "Income" and "Total_Spent".<br>
+   ![Agglomerative Graph](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/agglomerativeGraph.PNG)<br>
+         - Resulting dataframe is exported as a csv file and also stored in Amazon RDS database.<br>
+         
+Detailed code can be found here : 
+[CustomerSegmentation_Segment2.ipynb](https://github.com/nabuhant/CustomerSegmentation/blob/main/CustomerSegmentation_Segment2.ipynb).
+   <br>
 
 
 ### Dashboard
