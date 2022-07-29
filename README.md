@@ -87,7 +87,10 @@ Unsupervised Machine Learning would be the best method to target the business pr
 <br>
 Clusters will be determined by using K-means and  Agglomerative  clustering algorithms in this project. The purpose of performing two different algorithms is to simply compare/evaluate its results to further evaluate the problem and offer an in-depth analysis.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of aed8e29 (update readme with images )
 =======
 >>>>>>> parent of aed8e29 (update readme with images )
 <br>
