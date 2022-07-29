@@ -104,9 +104,10 @@ Clusters will be determined by using K-means and  Agglomerative  clustering algo
 5. Perform clustering algorithms:
 
 1) First the dataframe is subjected to the K-Means algorithm to find the clusters.
-         - Found the value of "K =3 " using the Elbow Curve.
-       
-       ![elbowGraph](https://user-images.githubusercontent.com/96637236/181809396-d582642b-f6fb-416a-8ba1-19b554ce1b64.PNG)
+
+- Found the value of "K =3 " using the Elbow Curve.
+
+  ![elbowGraph](https://user-images.githubusercontent.com/96637236/181817792-7dad728c-eccd-4023-911a-0fbdd74474d9.PNG
 
 - The K value of 3 clusters and the dataframe is passed to the "get_clusters" function that uses KMeans model and returns the predictions(0,1,2) in the form  of a column called "class" of the dataframe. 
        
