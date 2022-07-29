@@ -89,12 +89,6 @@ Unsupervised Machine Learning would be the best method to target the business pr
 <br>
 Clusters will be determined by using K-means and  Agglomerative  clustering algorithms in this project. The purpose of performing two different algorithms is to simply compare/evaluate its results to further evaluate the problem and offer an in-depth analysis.
 
-#### K-means and  Agglomerative  clustering
-![K means 1 -Analysis](https://user-images.githubusercontent.com/96637236/181680539-20a0bdfb-92e7-448a-9ef5-89651d61997d.png)
-![K means 2 - Analysis](https://user-images.githubusercontent.com/96637236/181680551-fde3ce7c-9e50-45d6-9621-696a94d9e92b.png)
-![Agglomerative Cluster Analysis 1 ](https://user-images.githubusercontent.com/96637236/181680562-f1b6e24f-b78b-40f1-bdec-66ffd8c3e254.png)
-![Agglomerative Cluster Analysis 2](https://user-images.githubusercontent.com/96637236/181680570-e83357a1-6f9b-4076-b6a6-4117c6756750.png)
-
 <br>
 #### Brief Procedure: <br>
 1. Made a copy of the dataframe obtained from the EDA process.
