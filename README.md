@@ -67,8 +67,9 @@ Data tables have been created to organize data and its functionality.
 Customer segmentation ERD has been created to further elaborate the data and its attributes.
 Project architecture has been implemented using Google Colab (ConnectDB File). Spark session has been integrated with the machine learning provisional database.
 
-#### Database Mock Up
-![Customer segmentation ERD](https://user-images.githubusercontent.com/96637236/179373640-56fca98c-a7c3-44d7-b189-596236bc2d3e.png)
+#### Database 
+##### ERD![](../ERD/Customer%20segmentation%20ERD.png)
+
 
 Data Integration via AWS and Google Colab-Jupyter notebook
 
@@ -119,8 +120,28 @@ Detailed code can be found here :
 
 
 ### Dashboard
-- Tableau will be used for visualization of the results.
-- Data is retrieved from the database and displayed.
+#### Dashboard Mockup 
+![](../Dashboard/Dashboard%20Mockup.jpg)
+#### •	Description of the tool(s) that will be used to create the final dashboard
+      -Tableau will be used to create the final dashboard for the customer segmentation data analysis.
+      -It is the highest-level data visualization tool. Hence, it helps produce excellent and interactive dashboards and reports that provide more insights than the reports created using spreadsheets or any other tools. 
+      -Tableau comes with different visualization options that help to enhance the user experience. 
+      -It can easily handle millions of data rows with ease. Users can create many types of data visualization from Big Data without impacting the dashboards’ speed and performance.
+#### •	Description of interactive element(s)
+      -Income vs total purchases by customer id and class
+      -Income cs total spending by customer id and class (Customer segmentation based on income and total purchases made)
+
+
+•	Description of the tool(s) that will be used to create the final dashboard
+	Tableau will be used to create the final dashboard for the customer segmentation data analysis.
+	It is the highest-level data visualization tool. Hence, it helps produce excellent and interactive dashboards and reports that provide more insights than the reports created using spreadsheets or any other tools. 
+	Tableau comes with different visualization options that help to enhance the user experience. 
+	It can easily handle millions of data rows with ease. Users can create many types of data visualization from Big Data without impacting the dashboards’ speed and performance.
+•	Description of interactive element(s)
+	Income vs total purchases by customer id and class
+	Income cs total spending by customer id and class (Customer segmentation based on income and total purchases made)
+
+
 <br>
 
 ### Results
