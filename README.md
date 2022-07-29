@@ -68,9 +68,7 @@ Customer segmentation ERD has been created to further elaborate the data and its
 Project architecture has been implemented using Google Colab (ConnectDB File). Spark session has been integrated with the machine learning provisional database.
 
 #### Database 
-##### ERD
-
-![Customer segmentation ERD](https://user-images.githubusercontent.com/96637236/181680163-e32bde6a-1914-4137-a50c-092f9b17f452.png)
+##### ERD![](../ERD/Customer%20segmentation%20ERD.png)
 
 
 Data Integration via AWS and Google Colab-Jupyter notebook
@@ -88,7 +86,10 @@ Unsupervised Machine Learning would be the best method to target the business pr
 ![cluster Types](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/clusterTypes.PNG)
 <br>
 Clusters will be determined by using K-means and  Agglomerative  clustering algorithms in this project. The purpose of performing two different algorithms is to simply compare/evaluate its results to further evaluate the problem and offer an in-depth analysis.
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of aed8e29 (update readme with images )
 <br>
 #### Brief Procedure: <br>
 1. Made a copy of the dataframe obtained from the EDA process.
@@ -124,8 +125,7 @@ Detailed code can be found here :
 
 ### Dashboard
 #### Dashboard Mockup 
-![Dashboard Mockup](https://user-images.githubusercontent.com/96637236/181680220-fddef1d1-27b4-4440-81a5-5f460c2efbf1.jpg)
-
+![](../Dashboard/Dashboard%20Mockup.jpg)
 #### •	Description of the tool(s) that will be used to create the final dashboard
       -Tableau will be used to create the final dashboard for the customer segmentation data analysis.
       -It is the highest-level data visualization tool. Hence, it helps produce excellent and interactive dashboards and reports that provide more insights than the reports created using spreadsheets or any other tools. 
@@ -134,6 +134,17 @@ Detailed code can be found here :
 #### •	Description of interactive element(s)
       -Income vs total purchases by customer id and class
       -Income cs total spending by customer id and class (Customer segmentation based on income and total purchases made)
+
+
+•	Description of the tool(s) that will be used to create the final dashboard
+	Tableau will be used to create the final dashboard for the customer segmentation data analysis.
+	It is the highest-level data visualization tool. Hence, it helps produce excellent and interactive dashboards and reports that provide more insights than the reports created using spreadsheets or any other tools. 
+	Tableau comes with different visualization options that help to enhance the user experience. 
+	It can easily handle millions of data rows with ease. Users can create many types of data visualization from Big Data without impacting the dashboards’ speed and performance.
+•	Description of interactive element(s)
+	Income vs total purchases by customer id and class
+	Income cs total spending by customer id and class (Customer segmentation based on income and total purchases made)
+
 
 <br>
 
