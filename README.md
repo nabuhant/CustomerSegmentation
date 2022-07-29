@@ -94,11 +94,11 @@ Clusters will be determined by using K-means and  Agglomerative  clustering algo
 2. The dataframe had categorical columns which were 'Marital_Status_map','Age_Group','Education_map' hence applied a "One-hot-encoder" algorithm on  these columns.<br>
 ![ML1](https://user-images.githubusercontent.com/96637236/181815067-17682b46-bcac-4706-970c-968f1760287a.PNG) <br>
 3. The dataframe obtained is merged with the original dataframe, renamed it with meaningful column names.
-4. Dropped the unnecessary columns along with the ones that were encoded and the 'NAN' containing rows. Dataframe is ready to be used for clustering algorithms.<br>
-![ML2](https://user-images.githubusercontent.com/96637236/181809245-f3f42a20-6eb7-49fd-8c73-542e9b24c784.PNG)<br>
+4. Dropped the unnecessary columns along with the ones that were encoded and the 'NAN' containing rows. Dataframe is ready to be used for clustering algorithms. <br><br>
+![ML2](https://user-images.githubusercontent.com/96637236/181809245-f3f42a20-6eb7-49fd-8c73-542e9b24c784.PNG) <br>
 5. Perform clustering algorithms:
    1. First the dataframe is subjected to the K-Means algorithm to find the clusters.
-      - Found the value of "K =3 " using the Elbow Curve.<br>
+      - Found the value of "K =3 " using the Elbow Curve.<br><br>
 ![elbowGraph](https://user-images.githubusercontent.com/96637236/181818065-c8d5bdf7-f0c4-471f-be8f-7d9280fac57f.PNG)<br>
       - The K value of 3 clusters and the dataframe is passed to the "get_clusters" function that uses KMeans model and returns the predictions(0,1,2) in the form  of a column called "class" of the dataframe. <br>       
    ![ThreeClusterDataFrame](https://user-images.githubusercontent.com/96637236/181815926-bd63ce39-7603-4205-94fc-33f9c7aac551.PNG)<br>
