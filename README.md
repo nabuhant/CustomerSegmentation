@@ -144,7 +144,7 @@ Detailed code can be found here :
 
 ### Dashboard
 #### Dashboard Mockup 
-![](../Dashboard/Dashboard%20Mockup.jpg)
+![Dashboard Mockup](https://user-images.githubusercontent.com/96637236/181819086-b024b438-880f-4e42-91e9-8fb4383962e4.jpg)
 
 #### •	Description of the tool(s) that will be used to create the final dashboard
 
