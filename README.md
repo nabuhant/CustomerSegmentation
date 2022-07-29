@@ -107,7 +107,7 @@ Clusters will be determined by using K-means and  Agglomerative  clustering algo
 
 - Found the value of "K =3 " using the Elbow Curve.
 
-  ![elbowGraph](https://user-images.githubusercontent.com/96637236/181817792-7dad728c-eccd-4023-911a-0fbdd74474d9.PNG
+![elbowGraph](https://user-images.githubusercontent.com/96637236/181818065-c8d5bdf7-f0c4-471f-be8f-7d9280fac57f.PNG)
 
 - The K value of 3 clusters and the dataframe is passed to the "get_clusters" function that uses KMeans model and returns the predictions(0,1,2) in the form  of a column called "class" of the dataframe. 
        
