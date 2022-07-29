@@ -14,6 +14,8 @@ The source data was obtained from Kaggle where it was originally provided by Dr.
 ### Problem Question
 Carry out a customer personality analysis to create well defined customer segments that help retail grocery businesses to understand different buying customer trends and behaviours.
 
+The link for the Google Slides for Customer Segmentation can be found here:
+ [Customer Segmentation Slides.](https://docs.google.com/presentation/d/1u8Zh8SJM3Sd6JehuyXiK_jgbpgT7qbZ0Nj-UeNy4y40/edit#slide=id.g13edb6fcd82_0_60)
 
 
 ## Overview
@@ -44,7 +46,7 @@ Carry out a customer personality analysis to create well defined customer segmen
 
 ### Technology/Tools Overview
 ![DataPipeline](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/Pipeline.PNG)
-- The link where the Data Pipeline diagram was created on draw.io can be found here [Data Pipeline Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
+
 <br> 
 
 ### Data Cleaning and Connection
@@ -78,8 +80,7 @@ Data Integration via AWS and Google Colab-Jupyter notebook
 ### Machine Learning
 #### ML Mockup
 <br> ![MLMockUp](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/MLMockUp.PNG)<br>
-The link for the Google document for the ML mockup document can be found here:
- [ML MockUp Image Document.](https://drive.google.com/file/d/1APNQWqY7bScOVwQ1omL61U-CXKvQPcZ5/view?usp=sharing)
+
 <br> 
 Unsupervised Machine Learning would be the best method to target the business problem because it is very unlikely to determine groups/classification for types of data from the selected dataset. Therefore, unsupervised learning will create clusters which furthermore allows to determine patterns to group data. SciKitLearn is the ML library that will be used with Jupyter Notebook to create clusters. As unsupervised learning relies on visual analysis, hvPlot and Plotly libraries are also added to the environment.<br>
 
@@ -90,52 +91,34 @@ Clusters will be determined by using K-means and  Agglomerative  clustering algo
 
 #### Brief Procedure: 
 1. Made a copy of the dataframe obtained from the EDA process.
-
-2. The dataframe had categorical columns which were 'Marital_Status_map','Age_Group','Education_map' hence applied a "One-hot-encoder" algorithm on  these columns.
-
-![ML1](https://user-images.githubusercontent.com/96637236/181815067-17682b46-bcac-4706-970c-968f1760287a.PNG)
-
+2. The dataframe had categorical columns which were 'Marital_Status_map','Age_Group','Education_map' hence applied a "One-hot-encoder" algorithm on  these columns.<br>
+![ML1](https://user-images.githubusercontent.com/96637236/181815067-17682b46-bcac-4706-970c-968f1760287a.PNG) <br>
 3. The dataframe obtained is merged with the original dataframe, renamed it with meaningful column names.
-
-4. Dropped the unnecessary columns along with the ones that were encoded and the 'NAN' containing rows. Dataframe is ready to be used for clustering algorithms.
-
-![ML2](https://user-images.githubusercontent.com/96637236/181809245-f3f42a20-6eb7-49fd-8c73-542e9b24c784.PNG)
-
-5. Perform clustering algorithms:
-
-i. First the dataframe is subjected to the K-Means algorithm to find the clusters.
-
-- Found the value of "K =3 " using the Elbow Curve.
-
-![elbowGraph](https://user-images.githubusercontent.com/96637236/181818065-c8d5bdf7-f0c4-471f-be8f-7d9280fac57f.PNG)
-
-- The K value of 3 clusters and the dataframe is passed to the "get_clusters" function that uses KMeans model and returns the predictions(0,1,2) in the form  of a column called "class" of the dataframe. 
-       
-   ![ThreeClusterDataFrame](https://user-images.githubusercontent.com/96637236/181815926-bd63ce39-7603-4205-94fc-33f9c7aac551.PNG)
-
-- Using the logistic regression analysis performed in EDA, dimensions "Income" and "Total_Spent" were selected and plotted a 2D hvplot-scatter graph for further analysis.
-  
-  ![k-means1](https://user-images.githubusercontent.com/96637236/181809563-da2434a9-710a-4f57-9f43-11d7573d4156.PNG)
-
-- Tried the same process by plotting different combinations of dimensions "Income " and "TotalNumPurchases" just for the reference.<br>
-   
-   ![k-means2](https://user-images.githubusercontent.com/96637236/181809607-3359ad94-eddc-4d56-9188-b149feaae5f0.PNG)
-
-- This dataframe is then exported as csv and also stored in the Amazon RDS database.
-
-ii. Secondly the same data frame obtained by encoding and cleaned from step 4 is subjected to the "Agglomerative Clustering" algorithm.
-
-   - Using Dendrogram 2 clusters were calculated.
-  
-  ![Dendrograph](https://user-images.githubusercontent.com/96637236/181809658-65f315e8-6c74-4a5f-872a-48ce056bcc84.PNG)
-  
-  - A copy of the dataframe is made to work upon  and applied the "Agglomerative Clustering" algorithm on it. Identified the class and added it as one of the columns.
-  
-  - Created a 2D hvplot-scatter plot to show the results of the hierarchical clustering algorithm against the dimensions "Income" and "Total_Spent".
-  
-  ![agglomerativeGraph](https://user-images.githubusercontent.com/96637236/181809804-0fc4eb8c-a6a7-4aae-a4db-caa28fb8c833.PNG)
-  
-  - Resulting dataframe is exported as a csv file and also stored in Amazon RDS database.
+4. Dropped the unnecessary columns along with the ones that were encoded and the 'NAN' containing rows. Dataframe is ready to be used for clustering algorithms.<br>
+![ML2](https://user-images.githubusercontent.com/96637236/181809245-f3f42a20-6eb7-49fd-8c73-542e9b24c784.PNG)<br>
+5. Perform clustering algorithms:
+   1. First the dataframe is subjected to the K-Means algorithm to find the clusters.
+      - Found the value of "K =3 " using the Elbow Curve.<br>
+![elbowGraph](https://user-images.githubusercontent.com/96637236/181818065-c8d5bdf7-f0c4-471f-be8f-7d9280fac57f.PNG)<br>
+      - The K value of 3 clusters and the dataframe is passed to the "get_clusters" function that uses KMeans model and returns the predictions(0,1,2) in the form  of a column called "class" of the dataframe. <br>       
+   ![ThreeClusterDataFrame](https://user-images.githubusercontent.com/96637236/181815926-bd63ce39-7603-4205-94fc-33f9c7aac551.PNG)<br>
+      - Using the logistic regression analysis performed in EDA, dimensions "Income" and "Total_Spent" were selected and plotted a 2D hvplot-scatter graph for further analysis.<br>  
+  ![k-means1](https://user-images.githubusercontent.com/96637236/181809563-da2434a9-710a-4f57-9f43-11d7573d4156.PNG)<br>
+      - Tried the same process by plotting different combinations of dimensions "Income " and "TotalNumPurchases" just for the reference.<br>   
+   ![k-means2](https://user-images.githubusercontent.com/96637236/181809607-3359ad94-eddc-4d56-9188-b149feaae5f0.PNG)<br>
+      - This dataframe is then exported as csv and also stored in the Amazon RDS database.
+    2. Secondly the same data frame obtained by encoding and cleaned from step 4 is subjected to the "Agglomerative Clustering" algorithm.
+         - Using Dendrogram 2 clusters were calculated.<br>  
+  ![Dendrograph](https://user-images.githubusercontent.com/96637236/181809658-65f315e8-6c74-4a5f-872a-48ce056bcc84.PNG)<br>  
+         - A copy of the dataframe is made to work upon  and applied the "Agglomerative Clustering" algorithm on it. Identified the class and added it as one of the columns. 
+         - Created a 2D hvplot-scatter plot to show the results of the hierarchical clustering algorithm against the dimensions "Income" and "Total_Spent".<br>  
+  ![agglomerativeGraph](https://user-images.githubusercontent.com/96637236/181809804-0fc4eb8c-a6a7-4aae-a4db-caa28fb8c833.PNG)  
+         - Resulting dataframe is exported as a csv file and also stored in Amazon RDS database.
+ 6. In this case although Agglomerative Clustering looks better we would still like to learn more about it by passing the result of Machine learning to the visualization process before conclusion.  
+ 7. This clustering model still has some limitations.
+     1. For a larger set of dataset, models might predict different clusters and priority on choosing model differs.
+     2. Number of clusters is still dependent on individual.
+ 8. The models will still be exeprimented on different combination of dimensions and input features to learn and decide on best results.
          
 Detailed code can be found here : 
 [CustomerSegmentation_Segment2.ipynb](https://github.com/nabuhant/CustomerSegmentation/blob/main/CustomerSegmentation_Segment2.ipynb).
