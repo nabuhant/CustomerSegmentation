@@ -100,28 +100,47 @@ Clusters will be determined by using K-means and  Agglomerative  clustering algo
 #### Brief Procedure: <br>
 1. Made a copy of the dataframe obtained from the EDA process.
 2. The dataframe had categorical columns which were 'Marital_Status_map','Age_Group','Education_map' hence applied a "One-hot-encoder" algorithm on  these columns.<br>
-![ML_DF1](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/ML1.PNG)<br>
+![ML1](https://user-images.githubusercontent.com/96637236/181809136-4e4f73ba-67d2-454e-af66-4b71e5925b0d.PNG)
+
 3. The dataframe obtained is merged with the original dataframe, renamed it with meaningful column names.
 4. Dropped the unnecessary columns along with the ones that were encoded and the 'NAN' containing rows. Dataframe is ready to be used for clustering algorithms.<br>
-<br> ![ML_DF2](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/ML2.PNG)<br> <br>
+<br> ![ML2](https://user-images.githubusercontent.com/96637236/181809245-f3f42a20-6eb7-49fd-8c73-542e9b24c784.PNG)
+<br>
+
 5. Perform clustering algorithms:
    1) First the dataframe is subjected to the K-Means algorithm to find the clusters.
          - Found the value of "K =3 " using the Elbow Curve.<br> <br>
-         ![Elbow Graph](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/elbowGraph.PNG) <br>
+       
+       ![elbowGraph](https://user-images.githubusercontent.com/96637236/181809396-d582642b-f6fb-416a-8ba1-19b554ce1b64.PNG)
+
+<br>
          - The K value of 3 clusters and the dataframe is passed to the "get_clusters" function that uses KMeans model and returns the predictions(0,1,2) in the form  of a column called "class" of the dataframe. <br>
-         ![Three Cluster Data Frame](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/ThreeClusterDataFrame.PNG)<br>
+        ![ThreeClusterDataFrame](https://user-images.githubusercontent.com/96637236/181809473-c5efc522-7b90-4fa7-8394-93f8aafa151c.PNG)
+
          - Using the logistic regression analysis performed in EDA, dimensions "Income" and "Total_Spent" were selected and plotted a 2D hvplot-scatter graph for further analysis.<br>
-   ![k-means1](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/k-means1.PNG)<br>
+  
+  ![k-means1](https://user-images.githubusercontent.com/96637236/181809563-da2434a9-710a-4f57-9f43-11d7573d4156.PNG)
+
+ <br>
          - Tried the same process by plotting different combinations of dimensions "Income " and "TotalNumPurchases" just for the reference.<br>
-   ![k-means2](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/k-means2.PNG)<br>
+   
+   ![k-means2](https://user-images.githubusercontent.com/96637236/181809607-3359ad94-eddc-4d56-9188-b149feaae5f0.PNG)
+
+ <br>
          - This dataframe is then exported as csv and also stored in the Amazon RDS database.
          
     2) Secondly the same data frame obtained by encoding and cleaned from step 4 is subjected to the "Agglomerative Clustering" algorithm.
          - Using Dendrogram 2 clusters were calculated.<br>
-   ![Dendrograph](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/Dendrograph.PNG)<br>
+  
+  ![Dendrograph](https://user-images.githubusercontent.com/96637236/181809658-65f315e8-6c74-4a5f-872a-48ce056bcc84.PNG)
+
+ <br>
          - A copy of the dataframe is made to work upon  and applied the "Agglomerative Clustering" algorithm on it. Identified the class and added it as one of the columns.   
          - Created a 2D hvplot-scatter plot to show the results of the hierarchical clustering algorithm against the dimensions "Income" and "Total_Spent".<br>
-   ![Agglomerative Graph](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/agglomerativeGraph.PNG)<br>
+  
+  ![agglomerativeGraph](https://user-images.githubusercontent.com/96637236/181809804-0fc4eb8c-a6a7-4aae-a4db-caa28fb8c833.PNG)
+
+ <br>
          - Resulting dataframe is exported as a csv file and also stored in Amazon RDS database.<br>
          
 Detailed code can be found here : 
@@ -133,24 +152,13 @@ Detailed code can be found here :
 #### Dashboard Mockup 
 ![](../Dashboard/Dashboard%20Mockup.jpg)
 #### •	Description of the tool(s) that will be used to create the final dashboard
-      -Tableau will be used to create the final dashboard for the customer segmentation data analysis.
-      -It is the highest-level data visualization tool. Hence, it helps produce excellent and interactive dashboards and reports that provide more insights than the reports created using spreadsheets or any other tools. 
-      -Tableau comes with different visualization options that help to enhance the user experience. 
-      -It can easily handle millions of data rows with ease. Users can create many types of data visualization from Big Data without impacting the dashboards’ speed and performance.
+-Tableau will be used to create the final dashboard for the customer segmentation data analysis.
+-It is the highest-level data visualization tool. Hence, it helps produce excellent and interactive dashboards and reports that provide more insights than the reports created using spreadsheets or any other tools. 
+-Tableau comes with different visualization options that help to enhance the user experience. 
+-It can easily handle millions of data rows with ease. Users can create many types of data visualization from Big Data without impacting the dashboards’ speed and performance.
 #### •	Description of interactive element(s)
-      -Income vs total purchases by customer id and class
-      -Income cs total spending by customer id and class (Customer segmentation based on income and total purchases made)
-
-
-•	Description of the tool(s) that will be used to create the final dashboard
-	Tableau will be used to create the final dashboard for the customer segmentation data analysis.
-	It is the highest-level data visualization tool. Hence, it helps produce excellent and interactive dashboards and reports that provide more insights than the reports created using spreadsheets or any other tools. 
-	Tableau comes with different visualization options that help to enhance the user experience. 
-	It can easily handle millions of data rows with ease. Users can create many types of data visualization from Big Data without impacting the dashboards’ speed and performance.
-•	Description of interactive element(s)
-	Income vs total purchases by customer id and class
-	Income cs total spending by customer id and class (Customer segmentation based on income and total purchases made)
-
+-Income vs total purchases by customer id and class
+-Income cs total spending by customer id and class (Customer segmentation based on income and total purchases made)
 
 <br>
 
