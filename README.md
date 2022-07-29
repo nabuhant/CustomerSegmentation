@@ -103,7 +103,7 @@ Clusters will be determined by using K-means and  Agglomerative  clustering algo
 
 5. Perform clustering algorithms:
 
-1) First the dataframe is subjected to the K-Means algorithm to find the clusters.
+i. First the dataframe is subjected to the K-Means algorithm to find the clusters.
 
 - Found the value of "K =3 " using the Elbow Curve.
 
@@ -123,9 +123,9 @@ Clusters will be determined by using K-means and  Agglomerative  clustering algo
 
 - This dataframe is then exported as csv and also stored in the Amazon RDS database.
 
-2) Secondly the same data frame obtained by encoding and cleaned from step 4 is subjected to the "Agglomerative Clustering" algorithm.
+ii. Secondly the same data frame obtained by encoding and cleaned from step 4 is subjected to the "Agglomerative Clustering" algorithm.
 
-- Using Dendrogram 2 clusters were calculated.
+   - Using Dendrogram 2 clusters were calculated.
   
   ![Dendrograph](https://user-images.githubusercontent.com/96637236/181809658-65f315e8-6c74-4a5f-872a-48ce056bcc84.PNG)
   
