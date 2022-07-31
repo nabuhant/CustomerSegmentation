@@ -98,7 +98,7 @@ After outliers were addressed and the data was transformed to more meaningful fo
 The correlation matrix below was created using the seaborn module as well. Based on the correlation values **Income** and **Total Spent** were used as fetures for the machine learning model. 
 ![EDA3](/Images/EDA3.png)  
 To further understand the relationship between these two features their linear regression was plotted and p-value and r-value determined as per below. The correlation, or r-value, is 0.793 showing a strong positive correlation as it is closer to 1.
-![EDA4](/Images/EDA4.png)  
+![EDA4](/Images/EDA4.PNG)  
 
 
 ### Machine Learning
