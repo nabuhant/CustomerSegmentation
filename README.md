@@ -14,8 +14,8 @@ The source data was obtained from Kaggle where it was originally provided by Dr.
 ### Problem Question
 Carry out a customer personality analysis to create well defined customer segments that help retail grocery businesses to understand different buying customer trends and behaviours.
 
-The link for the Google Slides for Customer Segmentation can be found here:
- [Customer Segmentation Slides.](https://docs.google.com/presentation/d/1u8Zh8SJM3Sd6JehuyXiK_jgbpgT7qbZ0Nj-UeNy4y40/edit#slide=id.g13edb6fcd82_0_60)
+The presentation for the project can be found here:
+ [Customer Segmentation Slides](https://docs.google.com/presentation/d/1u8Zh8SJM3Sd6JehuyXiK_jgbpgT7qbZ0Nj-UeNy4y40/edit?usp=sharing)
 
 
 ## Overview
@@ -44,12 +44,12 @@ The link for the Google Slides for Customer Segmentation can be found here:
 - All the members have created a separate branch to work upon and have successfully merged into the main branch.
  
 
-### Technology/Tools Overview
+### Project Pipeline
+To carry out the project the steps outlined below will be followed. The steps are further explained in the following sections.   
 ![DataPipeline](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/Pipeline.PNG)
-
 <br> 
 
-### Data Cleaning and Connection
+### Data Preperation: Cleaning & Connection
 The Pandas library is utilised through Jupyter notebook. It is used to clean the data and perform exploratory data analysis (EDA). 
 General outline of steps to be followed: 
 - Load the csv in a dataframe.
@@ -64,17 +64,28 @@ General outline of steps to be followed:
 
 
 ### Database Storage
-PostgreSQL with AWS cloud is used for the database requirement.
-Data tables have been created to organize data and its functionality.
-Customer segmentation ERD has been created to further elaborate the data and its attributes.
-Project architecture has been implemented using Google Colab (ConnectDB File). Spark session has been integrated with the machine learning provisional database.
+PostgreSQL with Amazon RDS cloud is used as the database holding the data.
+<!--- Data tables have been created to organize data and its functionality.--->
+The database's ERD has been created to further elaborate on the data and its attributes.
+<!--- Project architecture has been implemented using Google Colab (ConnectDB File).---> Spark session has been integrated with the machine learning provisional database.
 
 #### Database 
 ![Customer segmentation ERD](https://user-images.githubusercontent.com/96637236/181814109-cf81971c-df08-45ad-bb37-27671aa19c58.png)
 
-Data Integration via AWS and Google Colab-Jupyter notebook
-
+**Data Integration via AWS and Jupyter notebook**
 ![Connect DB ](https://user-images.githubusercontent.com/96637236/179373879-83e3a074-f349-4859-b4a5-ad1e0071eb2e.png)
+
+### EDA
+The objective for carrying out the EDA process is to provide insight in to the dataset and present the data for the following steps. In the EDA, the following was addressed:  
+**A.** Determined and tackled outliers in the data  
+**B.** Transformed and mapped columns to more meaningful data for our purposes  
+**C.** Preliminary plots (scatter plots) to visualise relatioships between data  
+**D.** Extracted correlation matrix to help determine features for machine learning model  
+
+#### A. Determined and tackled outliers in the data  
+#### B. Transformed and mapped columns to more meaningful data for our purposes  
+#### C. Preliminary plots (scatter plots) to visualise relatioships between data  
+#### D. Extracted correlation matrix to help determine features for machine learning model  
 
 
 ### Machine Learning
