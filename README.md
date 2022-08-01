@@ -70,16 +70,24 @@ General outline of steps taken are as follows:
 
 
 ### Database Storage
-PostgreSQL with Amazon RDS cloud is used as the database holding the data.
-<!--- Data tables have been created to organize data and its functionality.--->
-The database's ERD has been created to further elaborate on the data and its attributes.
-<!--- Project architecture has been implemented using Google Colab (ConnectDB File).---> Spark session has been integrated with the machine learning provisional database.
+PostgreSQL with Amazon RDS (Relational Database Service) from AWS (Amazon Web Services) is used as the cloud database storage for the dataset. The database's ERD was created to further elaborate on the data and its attributes. Tables from the ERD were created in PostgreSQL where cleaned dataframes were exported.
+![pgadminwindow](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/pgadmin_window.PNG)
+<br> 
 
-#### Database 
+#### Database ERD
 ![Customer segmentation ERD](https://user-images.githubusercontent.com/96637236/181814109-cf81971c-df08-45ad-bb37-27671aa19c58.png)
 
-**Data Integration via AWS and Jupyter notebook**
-![Connect DB ](https://user-images.githubusercontent.com/96637236/179373879-83e3a074-f349-4859-b4a5-ad1e0071eb2e.png)
+#### ERD Tables with data imported from Jupyter Notebook
+- Customers Table <br><br>
+![customertable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/customers_table.PNG)<br>
+
+- Orders Table <br><br>
+![orderstable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/orders_table.PNG)<br>
+
+- Products Table <br><br>
+![productstable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/products_table.PNG)<br>
+
+
 
 ### EDA
 The objective for carrying out the EDA process is to provide insight in to the dataset and present the data for the following steps. In the EDA, the following was addressed:  
