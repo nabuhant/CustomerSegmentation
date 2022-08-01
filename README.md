@@ -49,31 +49,48 @@ To carry out the project the steps outlined below will be followed. The steps ar
 ![DataPipeline](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/Pipeline.PNG)
 <br> 
 
-### Data Preperation: Cleaning & Connection
-The Pandas library is utilised through Jupyter notebook. It is used to clean the data and perform exploratory data analysis (EDA). 
-General outline of steps to be followed: 
+### Data Preparation: Cleaning & Connection
+The Pandas library is utilised through Jupyter notebook. Raw data is imported through Amazon's cloud service for better accessibility and connectivity. Furthermore, data is transformed and split into tables before exploratory data analysis (EDA). Detailed python code for cleaning and connecting of data can be found here: [Data Preparation](https://github.com/nabuhant/CustomerSegmentation/blob/main/CustomerSegmentation_Segment2.ipynb).
+<br>
+General outline of steps taken are as follows: 
+- Make a new database under Amazon AWS (Amazon Web Services).
+- Add raw data csv to the database.
+- Import libraries to jupyter notebook to load data and create dataframes for SQL.
+- Create string for Amazon RDS (Relational Database Service) URL.
+- Create engine to connect to Database from Amazon RDS.
 - Load the csv in a dataframe.
-- Check for duplicates.
-- Check for NAN values.
-- Eliminate redundant data.
-- Convert any column data type according to the need of the end result.
-- Divide the data frame into further different dataframes as per the requirement; these data frames  will represent individual tables in the database.
-- Data is ready for initial storage.
-- Any changes made or files added will be placed in this GitHub repository.
+- Drop unnecessary columns of data.
+- Rename columns.
+- Check for NAN values and drop if applicable.
+- Change data types for individual column if required.
+- Rearrange columns for further clarity.
+- Split the clean dataframe into several dataframes as per the requirement; these dataframes will represent individual tables in the database.
+- Export dataframes from Jupyter Notebook to tables in SQL using SQLAlchemy.
 <br>
 
 
 ### Database Storage
-PostgreSQL with Amazon RDS cloud is used as the database holding the data.
-<!--- Data tables have been created to organize data and its functionality.--->
-The database's ERD has been created to further elaborate on the data and its attributes.
-<!--- Project architecture has been implemented using Google Colab (ConnectDB File).---> Spark session has been integrated with the machine learning provisional database.
+PostgreSQL with Amazon RDS (Relational Database Service) from AWS (Amazon Web Services) is used as the cloud database storage for the dataset. The database's ERD was created to further elaborate on the data and its attributes. Tables from the ERD were created in PostgreSQL where cleaned dataframes were exported to.
+![pgadminwindow](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/pgadmin_window.PNG)
+<br> 
 
-#### Database 
+#### Database ERD
 ![Customer segmentation ERD](https://user-images.githubusercontent.com/96637236/181814109-cf81971c-df08-45ad-bb37-27671aa19c58.png)
 
-**Data Integration via AWS and Jupyter notebook**
-![Connect DB ](https://user-images.githubusercontent.com/96637236/179373879-83e3a074-f349-4859-b4a5-ad1e0071eb2e.png)
+#### ERD Tables with data imported from Jupyter Notebook
+- Customers Table <br><br>
+![customertable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/customers_table.PNG)<br>
+
+- Orders Table <br><br>
+![orderstable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/orders_table.PNG)<br>
+
+- Products Table <br><br>
+![productstable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/products_table.PNG)<br>
+
+- Customer Service Table <br><br>
+![customerservicetable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/customer_service_table.PNG)<br>
+<br>
+
 
 ### EDA
 The objective for carrying out the EDA process is to provide insight in to the dataset and present the data for the following steps. In the EDA, the following was addressed:  
