@@ -88,7 +88,7 @@ PostgreSQL with Amazon RDS (Relational Database Service) from AWS (Amazon Web Se
 ![productstable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/products_table.PNG)<br>
 
 - Customer Service Table <br><br>
-![customerservicetable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/customer_service_table.PNG)<br>
+![customerservicetable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/newcustomerservice_table.PNG)<br>
 <br>
 
 
