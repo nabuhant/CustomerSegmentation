@@ -50,9 +50,9 @@ To carry out the project the steps outlined below will be followed. The steps ar
 <br> 
 
 ### Data Preparation: Cleaning & Connection
-The Pandas library is utilised through Jupyter notebook. Raw data is imported through Amazon's cloud service for better accessibility and connectivity. Furthermore, data is transformed and split into tables before exploratory data analysis (EDA). Detailed python code for cleaning and connecting of data can be found here:  
-[Data Preparation](https://github.com/nabuhant/CustomerSegmentation/blob/main/CustomerSegmentation_Segment2.ipynb).
-General outline of steps to be followed: 
+The Pandas library is utilised through Jupyter notebook. Raw data is imported through Amazon's cloud service for better accessibility and connectivity. Furthermore, data is transformed and split into tables before exploratory data analysis (EDA). Detailed python code for cleaning and connecting of data can be found here: [Data Preparation](https://github.com/nabuhant/CustomerSegmentation/blob/main/CustomerSegmentation_Segment2.ipynb).
+<br>
+General outline of steps taken are as follows: 
 - Make a new database under Amazon AWS (Amazon Web Services).
 - Add raw data csv to the database.
 - Import libraries to jupyter notebook to load data and create dataframes for SQL.
