@@ -14,8 +14,8 @@ The source data was obtained from Kaggle where it was originally provided by Dr.
 ### Problem Question
 Carry out a customer personality analysis to create well defined customer segments that help retail grocery businesses to understand different buying customer trends and behaviours.
 
-The link for the Google Slides for Customer Segmentation can be found here:
- [Customer Segmentation Slides.](https://docs.google.com/presentation/d/1u8Zh8SJM3Sd6JehuyXiK_jgbpgT7qbZ0Nj-UeNy4y40/edit#slide=id.g13edb6fcd82_0_60)
+The presentation for the project can be found here:
+ [Customer Segmentation Slides](https://docs.google.com/presentation/d/1u8Zh8SJM3Sd6JehuyXiK_jgbpgT7qbZ0Nj-UeNy4y40/edit?usp=sharing)
 
 
 ## Overview
@@ -44,37 +44,78 @@ The link for the Google Slides for Customer Segmentation can be found here:
 - All the members have created a separate branch to work upon and have successfully merged into the main branch.
  
 
-### Technology/Tools Overview
+### Project Pipeline
+To carry out the project the steps outlined below will be followed. The steps are further explained in the following sections.   
 ![DataPipeline](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/Pipeline.PNG)
-
 <br> 
 
-### Data Cleaning and Connection
-The Pandas library is utilised through Jupyter notebook. It is used to clean the data and perform exploratory data analysis (EDA). 
-General outline of steps to be followed: 
+### Data Preparation: Cleaning & Connection
+The Pandas library is utilised through Jupyter notebook. Raw data is imported through Amazon's cloud service for better accessibility and connectivity. Furthermore, data is transformed and split into tables before exploratory data analysis (EDA). Detailed python code for cleaning and connecting of data can be found here: [Data Preparation](https://github.com/nabuhant/CustomerSegmentation/blob/main/CustomerSegmentation_Segment2.ipynb).
+<br>
+General outline of steps taken are as follows: 
+- Make a new database under Amazon AWS (Amazon Web Services).
+- Add raw data csv to the database.
+- Import libraries to jupyter notebook to load data and create dataframes for SQL.
+- Create string for Amazon RDS (Relational Database Service) URL.
+- Create engine to connect to Database from Amazon RDS.
 - Load the csv in a dataframe.
-- Check for duplicates.
-- Check for NAN values.
-- Eliminate redundant data.
-- Convert any column data type according to the need of the end result.
-- Divide the data frame into further different dataframes as per the requirement; these data frames  will represent individual tables in the database.
-- Data is ready for initial storage.
-- Any changes made or files added will be placed in this GitHub repository.
+- Drop unnecessary columns of data.
+- Rename columns.
+- Check for NAN values and drop if applicable.
+- Change data types for individual column if required.
+- Rearrange columns for further clarity.
+- Split the clean dataframe into several dataframes as per the requirement; these dataframes will represent individual tables in the database.
+- Export dataframes from Jupyter Notebook to tables in SQL using SQLAlchemy.
 <br>
 
 
 ### Database Storage
-PostgreSQL with AWS cloud is used for the database requirement.
-Data tables have been created to organize data and its functionality.
-Customer segmentation ERD has been created to further elaborate the data and its attributes.
-Project architecture has been implemented using Google Colab (ConnectDB File). Spark session has been integrated with the machine learning provisional database.
+PostgreSQL with Amazon RDS (Relational Database Service) from AWS (Amazon Web Services) is used as the cloud database storage for the dataset. The database's ERD was created to further elaborate on the data and its attributes. Tables from the ERD were created in PostgreSQL where cleaned dataframes were exported to.
+![pgadminwindow](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/pgadmin_window.PNG)
+<br> 
 
-#### Database 
+#### Database ERD
 ![Customer segmentation ERD](https://user-images.githubusercontent.com/96637236/181814109-cf81971c-df08-45ad-bb37-27671aa19c58.png)
 
-Data Integration via AWS and Google Colab-Jupyter notebook
+#### ERD Tables with data imported from Jupyter Notebook
+- Customers Table <br><br>
+![customertable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/customers_table.PNG)<br>
 
-![Connect DB ](https://user-images.githubusercontent.com/96637236/179373879-83e3a074-f349-4859-b4a5-ad1e0071eb2e.png)
+- Orders Table <br><br>
+![orderstable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/orders_table.PNG)<br>
+
+- Products Table <br><br>
+![productstable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/products_table.PNG)<br>
+
+- Customer Service Table <br><br>
+![customerservicetable](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/newcustomerservice_table.PNG)<br>
+<br>
+
+
+### EDA
+The objective for carrying out the EDA process is to provide insight in to the dataset and present the data for the following steps. In the EDA, the following was addressed:  
+**A.** Determined and tackled outliers in the data  
+**B.** Transformed and mapped columns to more meaningful data for our purposes  
+**C.** Preliminary plots (scatter plots) to visualise relatioships between data  
+**D.** Extracted correlation matrix to help determine features for machine learning model  
+
+#### A. Determined and tackled outliers in the data  
+An example of an outlier is single data point below where a customer's income was sugnificantly higher than all customers. This was dicovered by plotting a histogram of the incomes (Before). The data point was dropped and the income distribution is as per below (After) histogram. 
+![EDA1](/Images/EDA1.png)  
+Similarly, age was plotted on a histogram to determine outliers were present where age is over 85 years. These data points were dropped as well.  
+
+#### B. Transformed and mapped columns to more meaningful data for our purposes  
+An example of such a case is determing the age of customers. The raw data provided us a year of birth which an age was calculated from. Another instance is marital status which was unified to single or partner to result in simpler data to analyse and extract features for ML from.  
+
+#### C. Preliminary plots (scatter plots) to visualize relatioships between data  
+After outliers were addressed and the data was transformed to more meaningful forms, the seaborn module was used to generate scatter plots of pairwise relationships in the dataset to provide an overview of relatiships for preliminary feature extraction/exploration for the machine learning model.  
+![EDA2](/Images/EDA2.png)   
+
+#### D. Extracted correlation matrix to help determine features for machine learning model  
+The correlation matrix below was created using the seaborn module as well. Based on the correlation values **Income** and **Total Spent** were used as fetures for the machine learning model. 
+![EDA3](/Images/EDA3.png)  
+To further understand the relationship between these two features their linear regression was plotted and p-value and r-value determined as per below. The correlation, or r-value, is 0.793 showing a strong positive correlation as it is closer to 1.
+![EDA4](/Images/EDA4.PNG)  
 
 
 ### Machine Learning
