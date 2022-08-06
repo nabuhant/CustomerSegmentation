@@ -15,7 +15,8 @@ The source data was obtained from Kaggle where it was originally provided by Dr.
 Carry out a customer personality analysis to create well defined customer segments that help retail grocery businesses to understand different buying customer trends and behaviours.
 
 The presentation for the project can be found here:
- [Customer Segmentation Slides](https://docs.google.com/presentation/d/1u8Zh8SJM3Sd6JehuyXiK_jgbpgT7qbZ0Nj-UeNy4y40/edit?usp=sharing)
+ [Customer Segmentation Slides.](https://docs.google.com/presentation/d/1u8Zh8SJM3Sd6JehuyXiK_jgbpgT7qbZ0Nj-UeNy4y40/edit?usp=sharing)<br>
+ The Complete coding for this project can be found here:[Customer Segmentation File.](https://github.com/nabuhant/CustomerSegmentation/blob/main/CustomerSegmentation_Segment.ipynb)
 
 
 ## Overview
@@ -34,15 +35,6 @@ The presentation for the project can be found here:
 3. Check the status before merging into main, if required use pull request and then merge.Following command is required before merging to avoid conflict.
    - git status
    - git pull origin <br>
-
-#### Description of the communication protocols
-- As a team of four, each member collaborated and contributed equally towards the project.
-- Have used Google meet and Zoom calls apart from the office hours and class hours provided by the boot camp.
-- Have used the team's Slack channel for communication outside if meetings
-
-#### Individual Branches Creation
-- All the members have created a separate branch to work upon and have successfully merged into the main branch.
- 
 
 ### Project Pipeline
 To carry out the project the steps outlined below will be followed. The steps are further explained in the following sections.   
@@ -156,13 +148,22 @@ Clusters will be determined by using K-means and  Agglomerative  clustering algo
   ![agglomerativeGraph](https://user-images.githubusercontent.com/96637236/181809804-0fc4eb8c-a6a7-4aae-a4db-caa28fb8c833.PNG)  
          - Resulting dataframe is exported as a csv file and also stored in Amazon RDS database.
  6. In this case although Agglomerative Clustering looks better we would still like to learn more about it by passing the result of Machine learning to the visualization process before conclusion.  
- 7. This clustering model still has some limitations.
+ 7. This clustering model discussion.
+     1. We will choose 2 clusters here. "Cluster 0" has the customers with larger income than "Cluster 1".
+     2. We chose 2 clusters because the elbow curve resulted in two "K" values 2(Sharp bent) and 3 (slightlyBent) . To make it clear we further subjected the same dataset to an agglomerative clustering algorithm and got 2 clusters. The difference between clusters was very minimal or no overlapping.
+     3. In order to know how each feature behaves, a separate file is created to study the pattern.
+     4. The column "Class" form model results was added to the pre encoded data frame.Many columns were deleted that were not needed. 
+     5. Using very little features, Seaborn histograms are created for each column to know the basic pattern.Using this as base further analysis with additional features are plotted in visualization.
+     6. The histograms created were not very informative so passed the data to the next phase.
+     7. Please find the link for the file [Basic Analysis.](https://github.com/nabuhant/CustomerSegmentation/blob/main/basicAnalysis.ipynb)
+     
+ 8. This clustering model still has some limitations.
      1. For a larger set of dataset, models might predict different clusters and priority on choosing model differs.
-     2. Number of clusters is still dependent on individual.
- 8. The models will still be exeprimented on different combination of dimensions and input features to learn and decide on best results.
+     2. Number of clusters is still dependent on individual preference.
+ 9. The models will still be exeprimented on different combination of dimensions and input features to learn and decide on best results.
          
 Detailed code can be found here : 
-[CustomerSegmentation_Segment2.ipynb](https://github.com/nabuhant/CustomerSegmentation/blob/main/CustomerSegmentation_Segment2.ipynb).
+[CustomerSegmentation.ipynb](https://github.com/nabuhant/CustomerSegmentation/blob/main/CustomerSegmentation.ipynb).
    <br>
 
 
