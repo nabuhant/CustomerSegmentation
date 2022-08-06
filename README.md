@@ -16,7 +16,7 @@ Carry out a customer personality analysis to create well defined customer segmen
 
 The presentation for the project can be found here:
  [Customer Segmentation Slides.](https://docs.google.com/presentation/d/1u8Zh8SJM3Sd6JehuyXiK_jgbpgT7qbZ0Nj-UeNy4y40/edit?usp=sharing)<br>
- The Complete coding for this project can be found here:[Customer Segmentation File.](https://github.com/nabuhant/CustomerSegmentation/blob/main/CustomerSegmentation_Segment.ipynb)
+ The Complete coding for this project can be found here: [Customer Segmentation File.](https://github.com/nabuhant/CustomerSegmentation/blob/main/customerSegmentation.ipynb)
 
 
 ## Overview
@@ -41,8 +41,9 @@ To carry out the project the steps outlined below will be followed. The steps ar
 ![DataPipeline](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/Pipeline.PNG)
 <br> 
 
-### Data Preparation: Cleaning & Connection
-The Pandas library is utilised through Jupyter notebook. Raw data is imported through Amazon's cloud service for better accessibility and connectivity. Furthermore, data is transformed and split into tables before exploratory data analysis (EDA). Detailed python code for cleaning and connecting of data can be found here: [Data Preparation](https://github.com/nabuhant/CustomerSegmentation/blob/main/CustomerSegmentation_Segment2.ipynb).
+### 
+paration: Cleaning & Connection
+The Pandas library is utilised through Jupyter notebook. Raw data is imported through Amazon's cloud service for better accessibility and connectivity. Furthermore, data is transformed and split into tables before exploratory data analysis (EDA). Detailed python code for cleaning and connecting of data can be found here: [Data Preparation](https://github.com/nabuhant/CustomerSegmentation/blob/main/customerSegmentation.ipynb).
 <br>
 General outline of steps taken are as follows: 
 - Make a new database under Amazon AWS (Amazon Web Services).
@@ -163,7 +164,7 @@ Clusters will be determined by using K-means and  Agglomerative  clustering algo
  9. The models will still be exeprimented on different combination of dimensions and input features to learn and decide on best results.
          
 Detailed code can be found here : 
-[CustomerSegmentation.ipynb](https://github.com/nabuhant/CustomerSegmentation/blob/main/CustomerSegmentation.ipynb).
+[CustomerSegmentation.ipynb](https://github.com/nabuhant/CustomerSegmentation/blob/main/customerSegmentation.ipynb).
    <br>
 
 
