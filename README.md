@@ -13,8 +13,10 @@ The source data was obtained from Kaggle where it was originally provided by Dr.
 
 ### Problem Question:
 LB Grocers have contacted Beyond Impact, to help them with the overall market - customer segmentation and further help with the following concerns:
- How to market the products based on current shopping trends?
- How to increase overall profitability of the company?
+ 
+ -How to market the products based on current shopping trends?
+ 
+ -How to increase overall profitability of the company?
 
 The presentation for the project can be found here:
  [Customer Segmentation Slides.](https://docs.google.com/presentation/d/1u8Zh8SJM3Sd6JehuyXiK_jgbpgT7qbZ0Nj-UeNy4y40/edit?usp=sharing)<br>
@@ -197,12 +199,9 @@ Different features have been used to drive results from basic and in-depth analy
 - Offer senior loyalty program to Elite class - Seniors above age 50 
 - Increase web purchases by offering discounted deals for online purchases - targeted towards Valuable class as sample
 
-#### •	Description of interactive element(s)
+#### Description of interactive element(s)
 
 - Filter -Highighlight actions have been used in the Dashboard and story created for better data analysis
-
-### Results
-#### Areas of interest & expected results will include examining relationships between:
 
 #### Conclusion
 - Marketing strategies should focus more on the Valuable class as they consist of larger family size as compared to Elite class
