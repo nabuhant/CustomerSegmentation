@@ -11,8 +11,10 @@ management.
 ### Description of the source data
 The source data was obtained from Kaggle where it was originally provided by Dr. Omar Romero-Hernandez, an economics researcher at UC Berkeley. The data describes the customers' attributes (i.e. age, education, marital status, number of kids), amount spent on products the business carries, history of customer orders/purchases, and customers' interactions with customer service (complaints and response).  
 
-### Problem Question
-Carry out a customer personality analysis to create well defined customer segments that help retail grocery businesses to understand different buying customer trends and behaviours.
+### Problem Question:
+LB Grocers have contacted Beyond Impact, to help them with the overall market - customer segmentation and further help with the following concerns:
+ How to market the products based on current shopping trends?
+ How to increase overall profitability of the company?
 
 The presentation for the project can be found here:
  [Customer Segmentation Slides.](https://docs.google.com/presentation/d/1u8Zh8SJM3Sd6JehuyXiK_jgbpgT7qbZ0Nj-UeNy4y40/edit?usp=sharing)<br>
@@ -169,32 +171,41 @@ Detailed code can be found here :
 
 
 ### Dashboard
-#### Dashboard Mockup 
-![Dashboard Mockup](https://user-images.githubusercontent.com/96637236/181819086-b024b438-880f-4e42-91e9-8fb4383962e4.jpg)
 
-#### •	Description of the tool(s) that will be used to create the final dashboard
+#### Basic Analysis 
+![Basic Analysis-DB 1](https://user-images.githubusercontent.com/96637236/183270494-1cf49829-0908-4682-9eda-633f157a60c6.png)
 
--Tableau will be used to create the final dashboard for the customer segmentation data analysis.
+#### Detailed Analysis
+![Detailed Analysis - DB 2](https://user-images.githubusercontent.com/96637236/183270504-48a5f85e-e8f1-4818-afa8-c373803d0b79.png)
 
--It is the highest-level data visualization tool. Hence, it helps produce excellent and interactive dashboards and reports that provide more insights than the reports created using spreadsheets or any other tools. 
+![Detailed Analysis - DB 3](https://user-images.githubusercontent.com/96637236/183270509-1dd62d11-9b23-4795-8e55-e8d7f273a613.png)
 
--Tableau comes with different visualization options that help to enhance the user experience. 
+#### Dashboard Link via Tableau Public
+https://public.tableau.com/app/profile/hina.saeed1731/viz/CustomerSegmentation_Dashboard_Final/Clusters?publish=yes
 
--It can easily handle millions of data rows with ease. Users can create many types of data visualization from Big Data without impacting the dashboards’ speed and performance.
+Dashboard has been presented with a data story that is logical and easy to follow for someone unfamiliar with the topic. 
+It includes data analysis of Customer segmentation.
+Interactive elements are added to further elaborate the Dashboard
+
+Further details regarding the Dashboard analysis are as follows:
+
+Data Analysis was completed based on customer segmentation that was further divided into 2 groups or clusters - Elite & Valuable Class.
+Different features have been used to drive results from basic and in-depth analysis
+
+#### Recommendations are as follows:
+- Offer discounts and sales on different products for increase spending among Valuable class 
+- Offer senior loyalty program to Elite class - Seniors above age 50 
+- Increase web purchases by offering discounted deals for online purchases - targeted towards Valuable class as sample
 
 #### •	Description of interactive element(s)
 
--Income vs total purchases by customer id and class
-
--Income cs total spending by customer id and class (Customer segmentation based on income and total purchases made)
-
-<br>
+- Filter -Highighlight actions have been used in the Dashboard and story created for better data analysis
 
 ### Results
 #### Areas of interest & expected results will include examining relationships between:
 
-- family size and purchasing habits  
+#### Conclusion
+- Marketing strategies should focus more on the Valuable class as they consist of larger family size as compared to Elite class
+- Elite class can be appreciated for their higher spending by offering reward points. Higher purchases will result in increased points accumulation.
+- Further profitability can be increased by changing the floor plan that increases customer flow, accessible staff in store, promoting online purchases and targeting family friendly discounted products.
 
-- education, income and healthier food choices   
-
-- How the growth of the size of the family increases their buying habits.
