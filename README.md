@@ -19,7 +19,7 @@ LB Grocers have contacted Beyond Impact, to help them with the overall market - 
  -How to increase overall profitability of the company?
 
 The presentation for the project can be found here:
- [Customer Segmentation Slides.](https://docs.google.com/presentation/d/1u8Zh8SJM3Sd6JehuyXiK_jgbpgT7qbZ0Nj-UeNy4y40/edit?usp=sharing)<br>
+ [Customer Segmentation Slides.](https://docs.google.com/presentation/d/1yKPxy3uWoQJoH4-yD7rccqPCgsYoHS44sNkyUFY4Vt8/edit#slide=id.p)<br>
  The Complete coding for this project can be found here: [Customer Segmentation File.](https://github.com/nabuhant/CustomerSegmentation/blob/main/customerSegmentation.ipynb)
 
 
