@@ -25,21 +25,6 @@ The presentation for the project can be found here:
 
 ## Overview
 
-### Github 
-#### Steps followed for creating a new branch:
-1. To clone the new repo  
-   - git clone url -> Replace url with the project url  <br>
-2. Creating a new Branch and pushing the code in the branch.  
-   - git branch branchname  -> branchname is the branch to be created.
-   - git branch -> To check the available branches. * indicates the branch we are currently in.  
-   - git checkout branchname -> Switch to the preferred branchName.  
-   - git add .   -> Add all the files  
-   - git commit -m "Add the comments" -> Commit the code with appropriate comments.  
-   - git push -u origin branchname -> Replace branch name with the actual branch name.  <br>
-3. Check the status before merging into main, if required use pull request and then merge.Following command is required before merging to avoid conflict.
-   - git status
-   - git pull origin <br>
-
 ### Project Pipeline
 To carry out the project the steps outlined below will be followed. The steps are further explained in the following sections.   
 ![DataPipeline](https://github.com/nabuhant/CustomerSegmentation/blob/main/Images/Pipeline.PNG)
