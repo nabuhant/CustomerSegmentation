@@ -78,18 +78,18 @@ PostgreSQL with Amazon RDS (Relational Database Service) from AWS (Amazon Web Se
 The objective for carrying out the EDA process is to provide insight in to the dataset and present the data for the following steps. In the EDA, the following was addressed:  
 **A.** Determined and tackled outliers in the data  
 **B.** Transformed and mapped columns to more meaningful data for our purposes  
-**C.** Preliminary plots (scatter plots) to visualise relatioships between data  
+**C.** Preliminary plots (scatter plots) to visualise relationships between data  
 **D.** Extracted correlation matrix to help determine features for machine learning model  
 
 #### A. Determined and tackled outliers in the data  
-An example of an outlier is single data point below where a customer's income was sugnificantly higher than all customers. This was dicovered by plotting a histogram of the incomes (Before). The data point was dropped and the income distribution is as per below (After) histogram. 
+An example of an outlier is single data point below where a customer's income was sugnificantly higher than all customers. This was discovered by plotting a histogram of the incomes (Before). The data point was dropped and the income distribution is as per below (After) histogram. 
 ![EDA1](/Images/EDA1.png)  
 Similarly, age was plotted on a histogram to determine outliers were present where age is over 85 years. These data points were dropped as well.  
 
 #### B. Transformed and mapped columns to more meaningful data for our purposes  
 An example of such a case is determing the age of customers. The raw data provided us a year of birth which an age was calculated from. Another instance is marital status which was unified to single or partner to result in simpler data to analyse and extract features for ML from.  
 
-#### C. Preliminary plots (scatter plots) to visualize relatioships between data  
+#### C. Preliminary plots (scatter plots) to visualize relationships between data  
 After outliers were addressed and the data was transformed to more meaningful forms, the seaborn module was used to generate scatter plots of pairwise relationships in the dataset to provide an overview of relatiships for preliminary feature extraction/exploration for the machine learning model.  
 ![EDA2](/Images/EDA2.png)   
 
