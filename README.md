@@ -167,8 +167,9 @@ Detailed code can be found here :
 
 ![Detailed Analysis - DB 3](https://user-images.githubusercontent.com/96637236/183270509-1dd62d11-9b23-4795-8e55-e8d7f273a613.png)
 
-#### Dashboard Link via Tableau Public
-https://public.tableau.com/app/profile/hina.saeed1731/viz/CustomerSegmentation_Dashboard_Final/Clusters?publish=yes
+#### Dashboard 
+The dashboard for the data analysis can be found here:
+[Customer Segmentation Dashboard](https://public.tableau.com/views/CustomerSegmentation_Dashboard_Final_16601807088850/LBGrocersAnalysis-CustomerSegmentation?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)<br>
 
 Dashboard has been presented with a data story that is logical and easy to follow for someone unfamiliar with the topic. 
 It includes data analysis of Customer segmentation.
